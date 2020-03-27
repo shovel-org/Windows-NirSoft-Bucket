@@ -1,5 +1,5 @@
 {
-    "version": "1.10",
+    "version": "1.15",
     "homepage": "https://www.nirsoft.net/utils/web_browser_downloads_view.html",
     "bin": "BrowserDownloadsView.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/browserdownloadsview-x64.zip",
-            "hash": "069885445174f0737e66c0370a12ed2979eafd3d4e86fc7ba4b28388d5dac6fc"
+            "hash": "4294fe908a8f902dddc20296a68e631fb6e47c04e66c7256d20579d9455341c2"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/browserdownloadsview.zip",
-            "hash": "f16a0529f81a4c452aa4cb63bc64ef9aa7b4e43305f0473ecb32b1cdd563af05"
+            "hash": "6079ac3f6f31a59366ed1bdad643053c8829cb6fa4c08a254f3763d74c528e8d"
         }
     },
     "description": "Displays the details of downloaded files of Chrome and Firefox Web browsers",
