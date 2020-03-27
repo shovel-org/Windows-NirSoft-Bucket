@@ -258,7 +258,6 @@ WinFontsView v1.10
 HotKeysList v1.00
 MetarWeather v1.76
 HtmlDocEdit v1.02
-ZipInstaller v1.21
 IconsExtract v1.47
 DotNetResourcesExtract v1.01
 WinExplorer v1.30
