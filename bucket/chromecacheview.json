@@ -1,5 +1,5 @@
 {
-    "version": "2.00",
+    "version": "2.05",
     "homepage": "https://www.nirsoft.net/utils/chrome_cache_view.html",
     "url": "https://www.nirsoft.net/utils/chromecacheview.zip",
     "bin": "ChromeCacheView.exe",
@@ -13,7 +13,7 @@
         "chromecacheview_lng.ini",
         "chromecacheview.cfg"
     ],
-    "hash": "bd43a18d514853e74610b7471b1ab078b27e1be4f428768718c8349b0bfa6af5",
+    "hash": "7c2f2e5e2027ca641fe43dc563eb908d5ab30408b1810f8fd9bac69246625898",
     "description": "Chrome Browser Cache Viewer",
     "license": "Freeware",
     "notes": "If this application is useful to you, please consider donating to nirsoft.",
