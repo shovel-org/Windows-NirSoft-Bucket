@@ -1,0 +1,42 @@
+{
+    "version": "1.10",
+    "homepage": "https://www.nirsoft.net/utils/web_browser_downloads_view.html",
+    "bin": "BrowserDownloadsView.exe",
+    "shortcuts": [
+        [
+            "BrowserDownloadsView.exe",
+            "NirSoft\\BrowserDownloadsView"
+        ]
+    ],
+    "persist": [
+        "browserdownloadsview_lng.ini",
+        "browserdownloadsview.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/browserdownloadsview-x64.zip",
+            "hash": "069885445174f0737e66c0370a12ed2979eafd3d4e86fc7ba4b28388d5dac6fc"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/browserdownloadsview.zip",
+            "hash": "f16a0529f81a4c452aa4cb63bc64ef9aa7b4e43305f0473ecb32b1cdd563af05"
+        }
+    },
+    "description": "Displays the details of downloaded files of Chrome and Firefox Web browsers",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/browserdownloadsview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/browserdownloadsview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/browserdownloadsview.zip"
+            }
+        }
+    }
+}

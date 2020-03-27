@@ -1,0 +1,42 @@
+{
+    "version": "2.86",
+    "homepage": "https://www.nirsoft.net/utils/usb_devices_view.html",
+    "bin": "USBDeview.exe",
+    "shortcuts": [
+        [
+            "USBDeview.exe",
+            "NirSoft\\USBDeview "
+        ]
+    ],
+    "persist": [
+        "usbdeview_lng.ini",
+        "usbdeview.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/usbdeview-x64.zip",
+            "hash": "62e25565680b9915dccf0fd1a1682a6f48ae0da093069f74677fd47156223893"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/usbdeview.zip",
+            "hash": "c560457a048811a6337218eee1ea0e4e733072a551c86e413464404e2906c22d"
+        }
+    },
+    "description": "Lists all installed USB devices that you previously used.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/usbdeview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/usbdeview-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/usbdeview.zip"
+            }
+        }
+    }
+}

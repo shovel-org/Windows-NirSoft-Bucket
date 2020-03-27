@@ -1,0 +1,42 @@
+{
+    "version": "1.10",
+    "homepage": "https://www.nirsoft.net/utils/offline_registry_finder.html",
+    "bin": "OfflineRegistryFinder.exe",
+    "shortcuts": [
+        [
+            "OfflineRegistryFinder.exe",
+            "NirSoft\\OfflineRegistryFinder"
+        ]
+    ],
+    "persist": [
+        "offlineregistryfinder_lng.ini",
+        "offlineregistryfinder.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/offlineregistryfinder-x64.zip",
+            "hash": "970aca43bab99784237ab3553489cebcd364a74980a0830497646d19eab2c4bc"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/offlineregistryfinder.zip",
+            "hash": "c8b56353b6e2c9a2187d7c8fbe3e6680e869e3eb268e3706129d695188f97c9f"
+        }
+    },
+    "description": "Find data in external Registry files",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/offlineregistryfinder.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/offlineregistryfinder-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/offlineregistryfinder.zip"
+            }
+        }
+    }
+}

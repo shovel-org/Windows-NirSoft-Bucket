@@ -1,0 +1,42 @@
+{
+    "version": "1.10",
+    "homepage": "https://www.nirsoft.net/utils/mobile_device_file_search.html",
+    "bin": "MobileFileSearch.exe",
+    "shortcuts": [
+        [
+            "MobileFileSearch.exe",
+            "NirSoft\\MobileFileSearch"
+        ]
+    ],
+    "persist": [
+        "mobilefilesearch_lng.ini",
+        "mobilefilesearch.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/mobilefilesearch-x64.zip",
+            "hash": "d59d2f28bbd259ffead8c87bd97753293850ac76d8e2f2fce197eae50950735f"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/mobilefilesearch.zip",
+            "hash": "c481ad6e12a563226a08c39383d213018a75444e5390509606edd73ddbd1e85b"
+        }
+    },
+    "description": "Search files inside a mobile device plugged to the USB port on your computer",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/mobilefilesearch.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/mobilefilesearch-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/mobilefilesearch.zip"
+            }
+        }
+    }
+}

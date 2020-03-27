@@ -1,0 +1,42 @@
+{
+    "version": "1.30",
+    "homepage": "https://www.nirsoft.net/utils/network_opened_files.html",
+    "bin": "NetworkOpenedFiles.exe",
+    "shortcuts": [
+        [
+            "NetworkOpenedFiles.exe",
+            "NirSoft\\NetworkOpenedFiles"
+        ]
+    ],
+    "persist": [
+        "networkopenedfiles_lng.ini",
+        "networkopenedfiles.cfg"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/utils/networkopenedfiles-x64.zip",
+            "hash": "89716185a21afb070d2bd8a7194d1b54c9b7c2bf182f7c27cb80eb0df1bdcea3"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/utils/networkopenedfiles.zip",
+            "hash": "29832b7d3ff03022da36ce41ae68c06ec777cc55d1d566f644d0d9364a90252a"
+        }
+    },
+    "description": "Displays the files that are currently opened by other computers on your network.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/networkopenedfiles.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.nirsoft.net/utils/networkopenedfiles-x64.zip"
+            },
+            "32bit": {
+                "url": "https://www.nirsoft.net/utils/networkopenedfiles.zip"
+            }
+        }
+    }
+}
