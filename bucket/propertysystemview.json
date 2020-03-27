@@ -1,5 +1,5 @@
 {
-    "version": "1.00",
+    "version": "1.05",
     "homepage": "https://www.nirsoft.net/utils/windows_property_system_view.html",
     "bin": "PropertySystemView.exe",
     "shortcuts": [
@@ -15,11 +15,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/propertysystemview-x64.zip",
-            "hash": "c6ba084ac5ad207bebc59f32de9c9b09bb5336e0265572dc14d4c5262c503e5c"
+            "hash": "3a5ee2b531f893f37b85700c8dd1489f8ba7fe92bae4161a78db15ab322c30d5"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/propertysystemview.zip",
-            "hash": "5be5cb8f9005b88220de8091d14180b19a1bf175d3610fd626b93d7a09601e0a"
+            "hash": "e5cf3d4517b0c1e21808278d85e8dbd7e77040b6c49c7d0559dc87fe15f45e18"
         }
     },
     "description": "View/edit file properties",
