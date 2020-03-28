@@ -14,8 +14,8 @@
         ]
     ],
     "persist": [
-        "wirelessnetview_lng.ini",
-        "wirelessnetview.cfg"
+        "wirelessnetview.cfg",
+        "wirelessnetview_lng.ini"
     ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/wirelessnetview.xml",

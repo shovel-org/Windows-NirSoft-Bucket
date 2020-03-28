@@ -14,8 +14,8 @@
         ]
     ],
     "persist": [
-        "wul_lng.ini",
-        "wul.cfg"
+        "wul.cfg",
+        "wul_lng.ini"
     ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/wul.xml",

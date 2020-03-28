@@ -25,8 +25,8 @@
         ]
     ],
     "persist": [
-        "wirelesskeyview_lng.ini",
-        "wirelesskeyview.cfg"
+        "wirelesskeyview.cfg",
+        "wirelesskeyview_lng.ini"
     ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/wirelesskeyview.xml",

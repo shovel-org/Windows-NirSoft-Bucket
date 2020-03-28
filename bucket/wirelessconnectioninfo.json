@@ -14,8 +14,8 @@
         ]
     ],
     "persist": [
-        "wirelessconnectioninfo_lng.ini",
-        "wirelessconnectioninfo.cfg"
+        "wirelessconnectioninfo.cfg",
+        "wirelessconnectioninfo_lng.ini"
     ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/wirelessconnectioninfo.xml",

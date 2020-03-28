@@ -14,8 +14,8 @@
         ]
     ],
     "persist": [
-        "wnetwatcher_lng.ini",
-        "wnetwatcher.cfg"
+        "wnetwatcher.cfg",
+        "wnetwatcher_lng.ini"
     ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/wnetwatcher.xml",
