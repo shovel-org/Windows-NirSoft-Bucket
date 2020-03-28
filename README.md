@@ -246,6 +246,3 @@ WhoisCL v1.90
 WhoIsConnectedSniffer v1.20
 WhoisThisDomain v2.41
 WhosIP v1.18
-WifiChannelMonitor v1.59
-WifiHistoryView v1.52
-WifiInfoView v2.60
