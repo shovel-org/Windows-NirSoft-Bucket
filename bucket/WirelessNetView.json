@@ -6,10 +6,10 @@
     "url": "https://www.nirsoft.net/utils/wirelessnetview.zip",
     "hash": "d33aca4977de8dfaaa859813d21fe7d20709f80ace32302891b604fdc0c6ff78",
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
-    "bin": "wirelessnetview.exe",
+    "bin": "WirelessNetView.exe",
     "shortcuts": [
         [
-            "wirelessnetview.exe",
+            "WirelessNetView.exe",
             "NirSoft\\WirelessNetView"
         ]
     ],

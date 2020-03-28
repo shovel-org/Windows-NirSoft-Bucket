@@ -249,10 +249,3 @@ WhosIP v1.18
 WifiChannelMonitor v1.59
 WifiHistoryView v1.52
 WifiInfoView v2.60
-Win9x PassView v1.1
-WinCrashReport v1.25
-WinDefThreatsView v1.00
-WinExplorer v1.30
-WinFontsView v1.10
-WinLister v1.22
-WinLogOnView v1.33

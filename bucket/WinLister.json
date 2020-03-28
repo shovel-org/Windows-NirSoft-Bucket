@@ -1,17 +1,8 @@
 {
     "version": "1.22",
+    "description": "Displays the list of opened windows on system.",
     "homepage": "https://www.nirsoft.net/utils/winlister.html",
-    "bin": "winlister.exe",
-    "shortcuts": [
-        [
-            "winlister.exe",
-            "NirSoft\\WinLister"
-        ]
-    ],
-    "persist": [
-        "winlister_lng.ini",
-        "winlister.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/winlister-x64.zip",
@@ -22,9 +13,15 @@
             "hash": "1285a20c47498f864bc33a7ab3cfd3c97168cbbbe9e14b1474b0bb5f02cd24a2"
         }
     },
-    "description": "This utility displays the list of opened windows on your system. ",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "winlister.exe",
+    "shortcuts": [
+        [
+            "winlister.exe",
+            "NirSoft\\WinLister"
+        ]
+    ],
+    "persist": "winlister.cfg",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/winlister.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

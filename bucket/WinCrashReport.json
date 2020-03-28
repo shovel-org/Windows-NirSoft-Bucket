@@ -1,17 +1,8 @@
 {
     "version": "1.25",
+    "description": "Displays a report about crashed Windows application.",
     "homepage": "https://www.nirsoft.net/utils/application_crash_report.html",
-    "bin": "WinCrashReport.exe",
-    "shortcuts": [
-        [
-            "WinCrashReport.exe",
-            "NirSoft\\WinCrashReport"
-        ]
-    ],
-    "persist": [
-        "wincrashreport_lng.ini",
-        "wincrashreport.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/wincrashreport-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "2d754c8d4041b01809638bf07e366a5fd018fee12d263b1323306f5166476e4e"
         }
     },
-    "description": "Displays a report about crashed Windows application.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "WinCrashReport.exe",
+    "shortcuts": [
+        [
+            "WinCrashReport.exe",
+            "NirSoft\\WinCrashReport"
+        ]
+    ],
+    "persist": [
+        "wincrashreport.cfg",
+        "wincrashreport_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/wincrashreport.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

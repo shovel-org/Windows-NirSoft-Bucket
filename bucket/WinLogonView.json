@@ -1,0 +1,27 @@
+{
+    "version": "1.33",
+    "description": "Detects the date/time that users logged on and logged off.",
+    "homepage": "https://www.nirsoft.net/utils/windows_log_on_times_view.html",
+    "license": "Freeware",
+    "url": "https://www.nirsoft.net/utils/winlogonview.zip",
+    "hash": "eb0a67c1ba3b9de24f48b792facd5d9a1cd2d9a2d216f76a4eec9357f305815e",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "WinLogonView.exe",
+    "shortcuts": [
+        [
+            "WinLogonView.exe",
+            "NirSoft\\WinLogonView"
+        ]
+    ],
+    "persist": [
+        "winlogonview.cfg",
+        "winlogonview_lng.ini"
+    ],
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/winlogonview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/utils/winlogonview.zip"
+    }
+}
