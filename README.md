@@ -259,7 +259,3 @@ WinLogOnView v1.33
 WinPrefetchView v1.36
 WinsockServicesView v1.00
 WinUpdatesView v1.10 - Windows Updates History Viewer
-WirelessConnectionInfo v1.13
-WirelessKeyView v2.11
-WirelessNetConsole v1.00
-WirelessNetView v1.75

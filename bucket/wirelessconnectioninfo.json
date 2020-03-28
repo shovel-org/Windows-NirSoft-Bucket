@@ -1,7 +1,11 @@
 {
     "version": "1.13",
+    "description": "Displays general information and statistics about the active wifi connection.",
     "homepage": "https://www.nirsoft.net/utils/wireless_connection_information.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/wirelessconnectioninfo.zip",
+    "hash": "fcc109567fcd23ab03c6b0c254ccc8da7a22462d68a0bb0c382452e050daab20",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "WirelessConnectionInfo.exe",
     "shortcuts": [
         [
@@ -13,10 +17,6 @@
         "wirelessconnectioninfo_lng.ini",
         "wirelessconnectioninfo.cfg"
     ],
-    "hash": "fcc109567fcd23ab03c6b0c254ccc8da7a22462d68a0bb0c382452e050daab20",
-    "description": "Displays general information and statistics about the active wifi connection.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/wirelessconnectioninfo.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

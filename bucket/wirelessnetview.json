@@ -1,11 +1,15 @@
 {
     "version": "1.75",
+    "description": "Monitors the activity of wireless networks.",
     "homepage": "https://www.nirsoft.net/utils/wireless_network_view.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/wirelessnetview.zip",
-    "bin": "WirelessNetView.exe",
+    "hash": "d33aca4977de8dfaaa859813d21fe7d20709f80ace32302891b604fdc0c6ff78",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "wirelessnetview.exe",
     "shortcuts": [
         [
-            "WirelessNetView.exe",
+            "wirelessnetview.exe",
             "NirSoft\\WirelessNetView"
         ]
     ],
@@ -13,10 +17,6 @@
         "wirelessnetview_lng.ini",
         "wirelessnetview.cfg"
     ],
-    "hash": "d33aca4977de8dfaaa859813d21fe7d20709f80ace32302891b604fdc0c6ff78",
-    "description": "Monitor the activity of wireless networks around you.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/wirelessnetview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

@@ -1,6 +1,22 @@
 {
     "version": "2.11",
+    "description": "Recovers all wireless network security keys/passwords (WEP/WPA) stored in computer.",
     "homepage": "https://www.nirsoft.net/utils/wireless_key.html",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.nirsoft.net/toolsdownload/wirelesskeyview-x64.zip#/cosi.cosi",
+            "hash": "1a19f4f8fdc0b3ec78ee7340e152417c63ac664491ffb67c02cb824c360c046b"
+        },
+        "32bit": {
+            "url": "https://www.nirsoft.net/toolsdownload/wirelesskeyview.zip#/cosi.cosi",
+            "hash": "4f4864308aa6c9c537d25d0ae589040c443c57bfb24639306021f3d7862b8c43"
+        }
+    },
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\$fname\" -Switches '-pWKey4567#'",
+        "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }"
+    ],
     "bin": "WirelessKeyView.exe",
     "shortcuts": [
         [
@@ -12,19 +28,6 @@
         "wirelesskeyview_lng.ini",
         "wirelesskeyview.cfg"
     ],
-    "architecture": {
-        "64bit": {
-            "url": "https://www.nirsoft.net/toolsdownload/wirelesskeyview-x64.zip",
-            "hash": "1a19f4f8fdc0b3ec78ee7340e152417c63ac664491ffb67c02cb824c360c046b"
-        },
-        "32bit": {
-            "url": "https://www.nirsoft.net/toolsdownload/wirelesskeyview.zip",
-            "hash": "4f4864308aa6c9c537d25d0ae589040c443c57bfb24639306021f3d7862b8c43"
-        }
-    },
-    "description": "recovers lost wireless network keys (WEP/WPA) stored in your computer.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/wirelesskeyview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
@@ -32,10 +35,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.nirsoft.net/toolsdownload/wirelesskeyview-x64.zip"
+                "url": "https://www.nirsoft.net/toolsdownload/wirelesskeyview-x64.zip#/cosi.cosi"
             },
             "32bit": {
-                "url": "https://www.nirsoft.net/toolsdownload/wirelesskeyview.zip"
+                "url": "https://www.nirsoft.net/toolsdownload/wirelesskeyview.zip#/cosi.cosi"
             }
         }
     }
