@@ -1,17 +1,8 @@
 {
     "version": "1.20",
+    "description": "Network discovery tool that listens to network packets on network adapter using a capture driver and accumulates a list of computer and devices currently connected to network.",
     "homepage": "https://www.nirsoft.net/utils/who_is_connected_sniffer.html",
-    "bin": "WhoIsConnectedSniffer.exe",
-    "shortcuts": [
-        [
-            "WhoIsConnectedSniffer.exe",
-            "NirSoft\\WhoIsConnectedSniffer"
-        ]
-    ],
-    "persist": [
-        "whoisconnectedsniffer_lng.ini",
-        "whoisconnectedsniffer.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/whoisconnectedsniffer-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "5b5f165362bf2e7174003eaf466607ee81dc6cc94f860b456b4244d33d0b677c"
         }
     },
-    "description": "Shows who connects to your network by listening to network packets.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "WhoIsConnectedSniffer.exe",
+    "shortcuts": [
+        [
+            "WhoIsConnectedSniffer.exe",
+            "NirSoft\\WhoIsConnectedSniffer"
+        ]
+    ],
+    "persist": [
+        "whoisconnectedsniffer.cfg",
+        "whoisconnectedsniffer_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/whoisconnectedsniffer.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

@@ -242,7 +242,3 @@ WebSiteSniffer v1.51
 WebVideoCap v1.41
 WhatInStartup v1.35
 WhatIsHang v1.27
-WhoisCL v1.90
-WhoIsConnectedSniffer v1.20
-WhoisThisDomain v2.41
-WhosIP v1.18
