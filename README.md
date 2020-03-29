@@ -240,5 +240,3 @@ WebCamImageSave v1.11
 WebCookiesSniffer v1.30
 WebSiteSniffer v1.51
 WebVideoCap v1.41
-WhatInStartup v1.35
-WhatIsHang v1.27

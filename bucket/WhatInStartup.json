@@ -1,17 +1,8 @@
 {
     "version": "1.35",
+    "description": "Displays the list of all applications that are loaded automatically when Windows starts up.",
     "homepage": "https://www.nirsoft.net/utils/what_run_in_startup.html",
-    "bin": "WhatInStartup.exe",
-    "shortcuts": [
-        [
-            "WhatInStartup.exe",
-            "NirSoft\\WhatInStartup"
-        ]
-    ],
-    "persist": [
-        "whatinstartup_lng.ini",
-        "whatinstartup.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/whatinstartup-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "71241fb3d34661002d94cd0076216245182799894fbe0d43266a039f70115641"
         }
     },
-    "description": "disable/enable/delete programs that are loaded at Windows startup.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "WhatInStartup.exe",
+    "shortcuts": [
+        [
+            "WhatInStartup.exe",
+            "NirSoft\\WhatInStartup"
+        ]
+    ],
+    "persist": [
+        "whatinstartup.cfg",
+        "whatinstartup_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/whatinstartup.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
