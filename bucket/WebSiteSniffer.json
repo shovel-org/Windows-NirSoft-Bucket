@@ -1,17 +1,8 @@
 {
     "version": "1.51",
+    "description": "Packet sniffer tool that captures all Web site files downloaded by Web browser while browsing the Internet, and stores them.",
     "homepage": "https://www.nirsoft.net/utils/web_site_sniffer.html",
-    "bin": "WebSiteSniffer.exe",
-    "shortcuts": [
-        [
-            "WebSiteSniffer.exe",
-            "NirSoft\\WebSiteSniffer"
-        ]
-    ],
-    "persist": [
-        "websitesniffer_lng.ini",
-        "websitesniffer.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/websitesniffer-x64.zip",
@@ -22,9 +13,19 @@
             "hash": "f9c841fae243e1584ce9127ebafb7a7c8ce314336759e5ee149b21d18a267f5e"
         }
     },
-    "description": "Capture Web site files and save them on your hard drive.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | Where-Object { $_ -like '*.*' } | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "WebSiteSniffer.exe",
+    "shortcuts": [
+        [
+            "WebSiteSniffer.exe",
+            "NirSoft\\WebSiteSniffer"
+        ]
+    ],
+    "persist": [
+        "WebSiteFiles",
+        "websitesniffer.cfg",
+        "websitesniffer_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/websitesniffer.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

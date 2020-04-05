@@ -1,17 +1,8 @@
 {
     "version": "1.85",
+    "description": "Turns on one or more computers remotely by sending Wake-on-LAN (WOL) packet.",
     "homepage": "https://www.nirsoft.net/utils/wake_on_lan.html",
-    "bin": "WakeMeOnLan.exe",
-    "shortcuts": [
-        [
-            "WakeMeOnLan.exe",
-            "NirSoft\\WakeMeOnLan"
-        ]
-    ],
-    "persist": [
-        "wakemeonlan_lng.ini",
-        "wakemeonlan.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/wakemeonlan-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "9213f6b6299477b25ada1f73e9ee5576c9aa8bdf112d0e35b0f598c748aecce7"
         }
     },
-    "description": "Turn on one or more computers remotely by sending Wake-on-LAN (WOL) packet",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "WakeMeOnLan.exe",
+    "shortcuts": [
+        [
+            "WakeMeOnLan.exe",
+            "NirSoft\\WakeMeOnLan"
+        ]
+    ],
+    "persist": [
+        "wakemeonlan.cfg",
+        "wakemeonlan_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/wakemeonlan.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

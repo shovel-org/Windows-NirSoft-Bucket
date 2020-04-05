@@ -1,0 +1,30 @@
+{
+    "version": "2.00",
+    "description": "Recovers lost passwords from Web browser.",
+    "homepage": "https://www.nirsoft.net/utils/web_browser_password.html",
+    "license": "Freeware",
+    "url": "https://www.nirsoft.net/toolsdownload/webbrowserpassview.zip#/cosi.cosi",
+    "hash": "72f3675cd489367a1c1ba8d39091c692e2ea4e728384578fc6338d28e04ff880",
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\$fname\" -Switches '-pwbpv28821@'",
+        "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }"
+    ],
+    "bin": "WebBrowserPassView.exe",
+    "shortcuts": [
+        [
+            "WebBrowserPassView.exe",
+            "NirSoft\\WebBrowserPassView"
+        ]
+    ],
+    "persist": [
+        "webbrowserpassview.cfg",
+        "webbrowserpassview_lng.ini"
+    ],
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/webbrowserpassview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
+    "autoupdate": {
+        "url": "https://www.nirsoft.net/toolsdownload/webbrowserpassview.zip#/cosi.cosi"
+    }
+}

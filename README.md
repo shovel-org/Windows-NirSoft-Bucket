@@ -229,14 +229,8 @@ USBDeview v2.86
 USBLogView v1.26
 UserAssistView v1.02
 UserProfilesView v1.10
+
 VaultPasswordView v1.08
 VideoCacheView v3.05
 VNCPassView v1.05
 Volumouse v2.03
-WakeMeOnLan v1.85
-WebBrowserPassView v2.00
-WebCacheImageInfo v1.30
-WebCamImageSave v1.11
-WebCookiesSniffer v1.30
-WebSiteSniffer v1.51
-WebVideoCap v1.41
