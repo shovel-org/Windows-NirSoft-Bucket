@@ -1,16 +1,16 @@
 {
-    "version": "1.00",
+    "version": "1.05",
     "description": "Displays the list of all threats detected by Windows Defender Antivirus.",
     "homepage": "https://www.nirsoft.net/utils/windows_defender_threats_view.html",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/windefthreatsview-x64.zip",
-            "hash": "dd21431dbda6a1f09b192d9ca92075b4f89d9b49b3fd668f439b868ffd725e91"
+            "hash": "308fb5c09b8eb274543119f547124394fd63304d3bf758994046cdd861be10be"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/windefthreatsview.zip",
-            "hash": "b77625f1c7ee1a6016fa154fdcd591805db1a91a003f6e45079631e2c89cdc8a"
+            "hash": "bc1d8055018ef3f196ab2bcc5a920a4b1f4629157e8f4ef79747b0748ded722c"
         }
     },
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
