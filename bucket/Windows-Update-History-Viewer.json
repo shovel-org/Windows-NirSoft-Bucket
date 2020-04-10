@@ -1,16 +1,16 @@
 {
-    "version": "1.10",
+    "version": "1.11",
     "description": "Displays the history of Windows updates on system.",
     "homepage": "https://www.nirsoft.net/utils/windows_updates_history_viewer.html",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/winupdatesview-x64.zip",
-            "hash": "5ed03a785f3a894bb57c0765e5bb738af6132c67178541958a0ceec923ebccb9"
+            "hash": "e851fb4937a82ae04557e8caa7d33730c67c05cfa82062067dbc3d81d038bee9"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/winupdatesview.zip",
-            "hash": "eb1c8b1bdf1cd80d7b5e8e96f5835b1a4e7cbbb3df59a173341033585e03f2a4"
+            "hash": "62689d782487c9f6d83c716cfbab8e50a11629dd167a4c33287914dc9d17b781"
         }
     },
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
