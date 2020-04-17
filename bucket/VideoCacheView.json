@@ -1,17 +1,8 @@
 {
     "version": "3.05",
+    "description": "Extracts Web site video files from the cache of Web browser",
     "homepage": "https://www.nirsoft.net/utils/video_cache_view.html",
-    "bin": "VideoCacheView.exe",
-    "shortcuts": [
-        [
-            "VideoCacheView.exe",
-            "NirSoft\\VideoCacheView"
-        ]
-    ],
-    "persist": [
-        "videocacheview_lng.ini",
-        "videocacheview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/videocacheview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "beddf8fbd0eab7757baf2b8032f812b68b72247224b9ee028ba415583c69d4ca"
         }
     },
-    "description": "Extract Web site video files from the cache of your Web browser",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "VideoCacheView.exe",
+    "shortcuts": [
+        [
+            "VideoCacheView.exe",
+            "NirSoft\\VideoCacheView"
+        ]
+    ],
+    "persist": [
+        "videocacheview.cfg",
+        "videocacheview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/videocacheview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
