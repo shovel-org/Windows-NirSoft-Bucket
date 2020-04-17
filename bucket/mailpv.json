@@ -1,7 +1,11 @@
 {
     "version": "1.90",
+    "description": "Recovers email passwords",
     "homepage": "https://www.nirsoft.net/utils/mailpv.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/toolsdownload/mailpv.zip",
+    "hash": "e1d424ac6fbed3cdbfeba09206245ec9a0121bf7fffad17cc90d8f5443f68731",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "mailpv.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "mailpv_lng.ini",
-        "mailpv.cfg"
+        "mailpv.cfg",
+        "mailpv_lng.ini"
     ],
-    "hash": "e1d424ac6fbed3cdbfeba09206245ec9a0121bf7fffad17cc90d8f5443f68731",
-    "description": "Recovers email passwords",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/mailpv.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

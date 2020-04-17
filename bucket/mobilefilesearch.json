@@ -1,17 +1,8 @@
 {
     "version": "1.15",
+    "description": "Search files inside a mobile device plugged to the USB port on your computer",
     "homepage": "https://www.nirsoft.net/utils/mobile_device_file_search.html",
-    "bin": "MobileFileSearch.exe",
-    "shortcuts": [
-        [
-            "MobileFileSearch.exe",
-            "NirSoft\\MobileFileSearch"
-        ]
-    ],
-    "persist": [
-        "mobilefilesearch_lng.ini",
-        "mobilefilesearch.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/mobilefilesearch-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "487490d51278897cf7cb897713c6d36a69112f430ed098f9a59374f4221f80cd"
         }
     },
-    "description": "Search files inside a mobile device plugged to the USB port on your computer",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "MobileFileSearch.exe",
+    "shortcuts": [
+        [
+            "MobileFileSearch.exe",
+            "NirSoft\\MobileFileSearch"
+        ]
+    ],
+    "persist": [
+        "mobilefilesearch.cfg",
+        "mobilefilesearch_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/mobilefilesearch.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

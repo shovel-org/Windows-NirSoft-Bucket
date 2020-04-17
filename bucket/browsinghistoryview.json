@@ -1,17 +1,8 @@
 {
     "version": "2.40",
+    "description": "View browsing history of popular Web browsers ",
     "homepage": "https://www.nirsoft.net/utils/browsing_history_view.html",
-    "bin": "BrowsingHistoryView.exe",
-    "shortcuts": [
-        [
-            "BrowsingHistoryView.exe",
-            "NirSoft\\BrowsingHistoryView"
-        ]
-    ],
-    "persist": [
-        "browsinghistoryview_lng.ini",
-        "browsinghistoryview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/browsinghistoryview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "3030a3481b0c45417da1ab219fe5d53509d4ab617a581ef68054461f316477ec"
         }
     },
-    "description": "View browsing history of popular Web browsers ",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "BrowsingHistoryView.exe",
+    "shortcuts": [
+        [
+            "BrowsingHistoryView.exe",
+            "NirSoft\\BrowsingHistoryView"
+        ]
+    ],
+    "persist": [
+        "browsinghistoryview.cfg",
+        "browsinghistoryview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/browsinghistoryview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

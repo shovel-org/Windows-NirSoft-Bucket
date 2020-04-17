@@ -1,7 +1,11 @@
 {
     "version": "1.42",
+    "description": "MAC address lookup tool",
     "homepage": "https://www.nirsoft.net/utils/mac_address_lookup_find.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/macaddressview.zip",
+    "hash": "0ad8b0fa3490525842c5be39f25781f43496d26de7a72844167e099f9eaf45dd",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "MACAddressView.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "macaddressview_lng.ini",
-        "macaddressview.cfg"
+        "macaddressview.cfg",
+        "macaddressview_lng.ini"
     ],
-    "hash": "0ad8b0fa3490525842c5be39f25781f43496d26de7a72844167e099f9eaf45dd",
-    "description": "MAC address lookup tool",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/macaddressview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

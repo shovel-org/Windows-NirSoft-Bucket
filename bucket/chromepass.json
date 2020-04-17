@@ -1,7 +1,14 @@
 {
     "version": "1.51",
+    "description": "Password recovery tool for Google Chrome Web browser. ",
     "homepage": "https://www.nirsoft.net/utils/chromepass.html",
-    "url": "https://www.nirsoft.net/toolsdownload/chromepass.zip",
+    "license": "Freeware",
+    "url": "https://www.nirsoft.net/toolsdownload/chromepass.zip#/cosi.cosi",
+    "hash": "d7c03727f7dca23eee98c44ab53359cd4e65bd25fdccd0875ed29d7ff049c67b",
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\$fname\" -Switches '-pchpass9126*' -Removal",
+        "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }"
+    ],
     "bin": "ChromePass.exe",
     "shortcuts": [
         [
@@ -10,18 +17,14 @@
         ]
     ],
     "persist": [
-        "chromepass_lng.ini",
-        "chromepass.cfg"
+        "chromepass.cfg",
+        "chromepass_lng.ini"
     ],
-    "hash": "d7c03727f7dca23eee98c44ab53359cd4e65bd25fdccd0875ed29d7ff049c67b",
-    "description": "Password recovery tool for Google Chrome Web browser. ",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/chromepass.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
     },
     "autoupdate": {
-        "url": "https://www.nirsoft.net/toolsdownload/chromepass.zip"
+        "url": "https://www.nirsoft.net/toolsdownload/chromepass.zip#/cosi.cosi"
     }
 }

@@ -1,7 +1,11 @@
 {
     "version": "1.20",
+    "description": "Shows Facebook images stored in the cache of your Web browser.",
     "homepage": "https://www.nirsoft.net/utils/facebook_cache_viewer.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/fbcacheview.zip",
+    "hash": "daef5137af769e3908658c316870279aa0d4a56fdb5ab4b7138d506373cc590e",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "FBCacheView.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "fbcacheview_lng.ini",
-        "fbcacheview.cfg"
+        "fbcacheview.cfg",
+        "fbcacheview_lng.ini"
     ],
-    "hash": "daef5137af769e3908658c316870279aa0d4a56fdb5ab4b7138d506373cc590e",
-    "description": "Shows Facebook images stored in the cache of your Web browser.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/fbcacheview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

@@ -1,7 +1,11 @@
 {
     "version": "2.02",
+    "description": "ping multiple host names and IP addresses.",
     "homepage": "https://www.nirsoft.net/utils/multiple_ping_tool.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/pinginfoview.zip",
+    "hash": "9c074b15ff6d0bbf74f668a51907581f85eabec7cbaec42e4a03454719a95f45",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "PingInfoView.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "pinginfoview_lng.ini",
-        "pinginfoview.cfg"
+        "pinginfoview.cfg",
+        "pinginfoview_lng.ini"
     ],
-    "hash": "9c074b15ff6d0bbf74f668a51907581f85eabec7cbaec42e4a03454719a95f45",
-    "description": "ping multiple host names and IP addresses.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/pinginfoview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

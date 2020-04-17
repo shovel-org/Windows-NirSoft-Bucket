@@ -1,7 +1,11 @@
 {
     "version": "1.21",
+    "description": "displays essential information about your monitor.",
     "homepage": "https://www.nirsoft.net/utils/monitor_info_view.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/monitorinfoview.zip",
+    "hash": "9ed7ac01f40c5c5a1708d0a0323d21b7e203d8250f05d93c571e5221c6eeb4e6",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "MonitorInfoView.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "monitorinfoview_lng.ini",
-        "monitorinfoview.cfg"
+        "monitorinfoview.cfg",
+        "monitorinfoview_lng.ini"
     ],
-    "hash": "9ed7ac01f40c5c5a1708d0a0323d21b7e203d8250f05d93c571e5221c6eeb4e6",
-    "description": "displays essential information about your monitor.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/monitorinfoview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

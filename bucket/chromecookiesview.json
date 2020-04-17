@@ -1,7 +1,11 @@
 {
     "version": "1.60",
+    "description": "Alternative to the standard internal cookies viewer of Google Chrome",
     "homepage": "https://www.nirsoft.net/utils/chrome_cookies_view.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/chromecookiesview.zip",
+    "hash": "0fe8a355ec122d5fd63578a182d67e6ebd9cde073ae54f080b054149dbeb43d9",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "ChromeCookiesView.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "chromecookiesview_lng.ini",
-        "chromecookiesview.cfg"
+        "chromecookiesview.cfg",
+        "chromecookiesview_lng.ini"
     ],
-    "hash": "0fe8a355ec122d5fd63578a182d67e6ebd9cde073ae54f080b054149dbeb43d9",
-    "description": "Alternative to the standard internal cookies viewer of Google Chrome",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/chromecookiesview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

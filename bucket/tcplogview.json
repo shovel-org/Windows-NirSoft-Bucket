@@ -1,17 +1,8 @@
 {
     "version": "1.32",
+    "description": "Monitors the opened TCP connections on your system.",
     "homepage": "https://www.nirsoft.net/utils/tcp_log_view.html",
-    "bin": "TcpLogView.exe",
-    "shortcuts": [
-        [
-            "TcpLogView.exe",
-            "NirSoft\\TcpLogView"
-        ]
-    ],
-    "persist": [
-        "tcplogview_lng.ini",
-        "tcplogview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/tcplogview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "8a09d95338621593ef84fd80e5c26fe8549b0c0eeab7f8d26e2acbd615fb4c75"
         }
     },
-    "description": "Monitors the opened TCP connections on your system.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "TcpLogView.exe",
+    "shortcuts": [
+        [
+            "TcpLogView.exe",
+            "NirSoft\\TcpLogView"
+        ]
+    ],
+    "persist": [
+        "tcplogview.cfg",
+        "tcplogview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/tcplogview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

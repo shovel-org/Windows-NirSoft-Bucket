@@ -1,17 +1,8 @@
 {
     "version": "1.00",
+    "description": "find and recovery files from Windows shadow copies",
     "homepage": "https://www.nirsoft.net/utils/previous_files_recovery.html",
-    "bin": "PreviousFilesRecovery.exe",
-    "shortcuts": [
-        [
-            "PreviousFilesRecovery.exe",
-            "NirSoft\\PreviousFilesRecovery"
-        ]
-    ],
-    "persist": [
-        "previousfilesrecovery_lng.ini",
-        "previousfilesrecovery.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/previousfilesrecovery-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "c528ff1295d9a4e8f309b659f1bf7165ab1d89b1394b789e680d5646c2a3ac24"
         }
     },
-    "description": "find and recovery files from Windows shadow copies",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "PreviousFilesRecovery.exe",
+    "shortcuts": [
+        [
+            "PreviousFilesRecovery.exe",
+            "NirSoft\\PreviousFilesRecovery"
+        ]
+    ],
+    "persist": [
+        "previousfilesrecovery.cfg",
+        "previousfilesrecovery_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/previousfilesrecovery.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

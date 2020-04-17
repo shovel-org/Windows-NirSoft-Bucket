@@ -1,7 +1,11 @@
 {
     "version": "1.07",
+    "description": "Show bluetooth devices    list",
     "homepage": "https://www.nirsoft.net/utils/bluetoothcl.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/bluetoothcl.zip",
+    "hash": "025a4a02527a533299370be128323e4a2443fde0f404b2cf8793b3748c0c531f",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "BluetoothCL.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "bluetoothcl_lng.ini",
-        "bluetoothcl.cfg"
+        "bluetoothcl.cfg",
+        "bluetoothcl_lng.ini"
     ],
-    "hash": "025a4a02527a533299370be128323e4a2443fde0f404b2cf8793b3748c0c531f",
-    "description": "Show bluetooth devices  list",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/bluetoothcl.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

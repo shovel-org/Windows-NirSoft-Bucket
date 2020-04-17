@@ -1,7 +1,11 @@
 {
     "version": "6.40",
+    "description": "Package of network monitoring tools for Windows",
     "homepage": "https://www.nirsoft.net/network_tools.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/packages/networktools.zip",
+    "hash": "451962a2e70fa1d5846aeddf4ae9d272e28324c9d3533c9457fbda8c44a838b2",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "cports.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "networktools_lng.ini",
-        "networktools.cfg"
+        "networktools.cfg",
+        "networktools_lng.ini"
     ],
-    "hash": "451962a2e70fa1d5846aeddf4ae9d272e28324c9d3533c9457fbda8c44a838b2",
-    "description": "Package of network monitoring tools for Windows",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/networktools.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

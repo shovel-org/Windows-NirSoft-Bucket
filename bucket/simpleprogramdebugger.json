@@ -1,17 +1,8 @@
 {
     "version": "1.10",
+    "description": "Displays debugging events of a running program.",
     "homepage": "https://www.nirsoft.net/utils/simple_program_debugger.html",
-    "bin": "SimpleProgramDebugger.exe",
-    "shortcuts": [
-        [
-            "SimpleProgramDebugger.exe",
-            "NirSoft\\SimpleProgramDebugger"
-        ]
-    ],
-    "persist": [
-        "simpleprogramdebugger_lng.ini",
-        "simpleprogramdebugger.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/simpleprogramdebugger-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "63ad53bf9a1261b6a6caf2acac222bf07e18d9c15668b2174b11d67685508bb9"
         }
     },
-    "description": "Displays debugging events of a running program.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "SimpleProgramDebugger.exe",
+    "shortcuts": [
+        [
+            "SimpleProgramDebugger.exe",
+            "NirSoft\\SimpleProgramDebugger"
+        ]
+    ],
+    "persist": [
+        "simpleprogramdebugger.cfg",
+        "simpleprogramdebugger_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/simpleprogramdebugger.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

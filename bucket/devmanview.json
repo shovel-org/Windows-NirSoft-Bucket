@@ -1,17 +1,8 @@
 {
     "version": "1.66",
+    "description": "Alternative to the standard Device Manager of Windows.",
     "homepage": "https://www.nirsoft.net/utils/device_manager_view.html",
-    "bin": "DevManView.exe",
-    "shortcuts": [
-        [
-            "DevManView.exe",
-            "NirSoft\\DevManView"
-        ]
-    ],
-    "persist": [
-        "devmanview_lng.ini",
-        "devmanview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/devmanview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "d38d56c181c181ef8f57f3c75e697967f046c571e7b7125e11d15661288f9c61"
         }
     },
-    "description": "Alternative to the standard Device Manager of Windows.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "DevManView.exe",
+    "shortcuts": [
+        [
+            "DevManView.exe",
+            "NirSoft\\DevManView"
+        ]
+    ],
+    "persist": [
+        "devmanview.cfg",
+        "devmanview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/devmanview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

@@ -1,17 +1,8 @@
 {
     "version": "1.13",
+    "description": "Displays network usage information for Windows 8 and Windows 10",
     "homepage": "https://www.nirsoft.net/utils/network_usage_view.html",
-    "bin": "NetworkUsageView.exe",
-    "shortcuts": [
-        [
-            "NetworkUsageView.exe",
-            "NirSoft\\NetworkUsageView"
-        ]
-    ],
-    "persist": [
-        "networkusageview_lng.ini",
-        "networkusageview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/networkusageview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "bd731a452b7b564203db59d57e9658dac920deebaec2459d10d424958092a04a"
         }
     },
-    "description": "Displays network usage information for Windows 8 and Windows 10",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "NetworkUsageView.exe",
+    "shortcuts": [
+        [
+            "NetworkUsageView.exe",
+            "NirSoft\\NetworkUsageView"
+        ]
+    ],
+    "persist": [
+        "networkusageview.cfg",
+        "networkusageview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/networkusageview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

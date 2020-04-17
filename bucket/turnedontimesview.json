@@ -1,7 +1,11 @@
 {
     "version": "1.42",
+    "description": "View the time/date ranges that your computer was turned on.",
     "homepage": "https://www.nirsoft.net/utils/computer_turned_on_times.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/turnedontimesview.zip",
+    "hash": "092607ed102c5b051180e1fa76cee5ed38cbd7f22025d5f1121732b8573fed9f",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "TurnedOnTimesView.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "turnedontimesview_lng.ini",
-        "turnedontimesview.cfg"
+        "turnedontimesview.cfg",
+        "turnedontimesview_lng.ini"
     ],
-    "hash": "092607ed102c5b051180e1fa76cee5ed38cbd7f22025d5f1121732b8573fed9f",
-    "description": "View the time/date ranges that your computer was turned on.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/turnedontimesview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

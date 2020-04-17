@@ -1,17 +1,8 @@
 {
     "version": "1.47",
+    "description": "Displays the list of all device drivers currently loaded on your system.",
     "homepage": "https://www.nirsoft.net/utils/driverview.html",
-    "bin": "DriverView.exe",
-    "shortcuts": [
-        [
-            "DriverView.exe",
-            "NirSoft\\DriverView"
-        ]
-    ],
-    "persist": [
-        "driverview_lng.ini",
-        "driverview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/driverview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "3b54948ede7ab5e14761d4036fa78364e6c46d8ec4fa0ea7572855b1701359a8"
         }
     },
-    "description": "Displays the list of all device drivers currently loaded on your system.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "DriverView.exe",
+    "shortcuts": [
+        [
+            "DriverView.exe",
+            "NirSoft\\DriverView"
+        ]
+    ],
+    "persist": [
+        "driverview.cfg",
+        "driverview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/driverview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

@@ -1,17 +1,8 @@
 {
     "version": "1.30",
+    "description": "Displays the files that are currently opened by other computers on your network.",
     "homepage": "https://www.nirsoft.net/utils/network_opened_files.html",
-    "bin": "NetworkOpenedFiles.exe",
-    "shortcuts": [
-        [
-            "NetworkOpenedFiles.exe",
-            "NirSoft\\NetworkOpenedFiles"
-        ]
-    ],
-    "persist": [
-        "networkopenedfiles_lng.ini",
-        "networkopenedfiles.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/networkopenedfiles-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "29832b7d3ff03022da36ce41ae68c06ec777cc55d1d566f644d0d9364a90252a"
         }
     },
-    "description": "Displays the files that are currently opened by other computers on your network.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "NetworkOpenedFiles.exe",
+    "shortcuts": [
+        [
+            "NetworkOpenedFiles.exe",
+            "NirSoft\\NetworkOpenedFiles"
+        ]
+    ],
+    "persist": [
+        "networkopenedfiles.cfg",
+        "networkopenedfiles_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/networkopenedfiles.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

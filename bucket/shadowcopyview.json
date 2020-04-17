@@ -1,17 +1,8 @@
 {
     "version": "1.10",
+    "description": "View shadow copies on your system",
     "homepage": "https://www.nirsoft.net/utils/shadow_copy_view.html",
-    "bin": "ShadowCopyView.exe",
-    "shortcuts": [
-        [
-            "ShadowCopyView.exe",
-            "NirSoft\\ShadowCopyView"
-        ]
-    ],
-    "persist": [
-        "shadowcopyview_lng.ini",
-        "shadowcopyview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/shadowcopyview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "f6ba78f19e0949393e33a82916664a6467b455b09a5e610769b52fedd63c484e"
         }
     },
-    "description": "View shadow copies on your system",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "ShadowCopyView.exe",
+    "shortcuts": [
+        [
+            "ShadowCopyView.exe",
+            "NirSoft\\ShadowCopyView"
+        ]
+    ],
+    "persist": [
+        "shadowcopyview.cfg",
+        "shadowcopyview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/shadowcopyview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

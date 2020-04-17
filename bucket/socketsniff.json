@@ -1,7 +1,11 @@
 {
     "version": "1.11",
+    "description": "Watch the Windows Sockets (WinSock) activity of the selected process.",
     "homepage": "https://www.nirsoft.net/utils/socket_sniffer.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/socketsniff.zip",
+    "hash": "2160d297c21a4758e540ea5291c6d4df4bce74c2dab85647a8a1a875fcf49ccc",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "SocketSniff.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "socketsniff_lng.ini",
-        "socketsniff.cfg"
+        "socketsniff.cfg",
+        "socketsniff_lng.ini"
     ],
-    "hash": "2160d297c21a4758e540ea5291c6d4df4bce74c2dab85647a8a1a875fcf49ccc",
-    "description": "Watch the Windows Sockets (WinSock) activity of the selected process.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/socketsniff.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

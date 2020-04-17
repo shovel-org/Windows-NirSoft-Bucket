@@ -1,7 +1,11 @@
 {
     "version": "1.05",
+    "description": "Add Copy/Cut/Paste buttons to the Explorer toolbar of Windows 7.",
     "homepage": "https://www.nirsoft.net/utils/custom_explorer_toolbar.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/customexplorertoolbar.zip",
+    "hash": "80fff8da356ad971108847f122f821a2e9b2dd098a4b906c74b94f2be24d337e",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "CustomExplorerToolbar.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "customexplorertoolbar_lng.ini",
-        "customexplorertoolbar.cfg"
+        "customexplorertoolbar.cfg",
+        "customexplorertoolbar_lng.ini"
     ],
-    "hash": "80fff8da356ad971108847f122f821a2e9b2dd098a4b906c74b94f2be24d337e",
-    "description": "Add Copy/Cut/Paste buttons to the Explorer toolbar of Windows 7.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/customexplorertoolbar.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

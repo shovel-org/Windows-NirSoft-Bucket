@@ -1,17 +1,8 @@
 {
     "version": "1.71",
+    "description": "displays the list of installed drivers and services on your system.",
     "homepage": "https://www.nirsoft.net/utils/serviwin.html",
-    "bin": "serviwin.exe",
-    "shortcuts": [
-        [
-            "serviwin.exe",
-            "NirSoft\\ServiWin"
-        ]
-    ],
-    "persist": [
-        "serviwin_lng.ini",
-        "serviwin.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/serviwin-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "549ae6a1222f80c85d7abad860866c00f5df12ad284f03a4e695e542e9540ff6"
         }
     },
-    "description": "displays the list of installed drivers and services on your system.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "serviwin.exe",
+    "shortcuts": [
+        [
+            "serviwin.exe",
+            "NirSoft\\ServiWin"
+        ]
+    ],
+    "persist": [
+        "serviwin.cfg",
+        "serviwin_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/serviwin.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

@@ -1,17 +1,8 @@
 {
     "version": "1.02",
+    "description": "List of all programs that run with different compatibility setting",
     "homepage": "https://www.nirsoft.net/utils/app_compatibility_view.html",
-    "bin": "AppCompatibilityView.exe",
-    "shortcuts": [
-        [
-            "AppCompatibilityView.exe",
-            "NirSoft\\AppCompatibilityView"
-        ]
-    ],
-    "persist": [
-        "appcompatibilityview_lng.ini",
-        "appcompatibilityview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/appcompatibilityview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "922af28086ee6601546f4ec831304ebd3928c0255e70ba62ff6c4075689bd06c"
         }
     },
-    "description": "List of all programs that run with different compatibility setting",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "AppCompatibilityView.exe",
+    "shortcuts": [
+        [
+            "AppCompatibilityView.exe",
+            "NirSoft\\AppCompatibilityView"
+        ]
+    ],
+    "persist": [
+        "appcompatibilityview.cfg",
+        "appcompatibilityview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/appcompatibilityview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

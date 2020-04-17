@@ -1,17 +1,8 @@
 {
     "version": "1.25",
+    "description": "Compares 2 snapshots of Windows Registry.",
     "homepage": "https://www.nirsoft.net/utils/registry_changes_view.html",
-    "bin": "RegistryChangesView.exe",
-    "shortcuts": [
-        [
-            "RegistryChangesView.exe",
-            "NirSoft\\RegistryChangesView"
-        ]
-    ],
-    "persist": [
-        "registrychangesview_lng.ini",
-        "registrychangesview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/registrychangesview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "dd3fe77d6a1ef3adb6793bf3a808886c4e4ca49ac55b02b0b6dc26bfe48228f6"
         }
     },
-    "description": "Compares 2 snapshots of Windows Registry.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "RegistryChangesView.exe",
+    "shortcuts": [
+        [
+            "RegistryChangesView.exe",
+            "NirSoft\\RegistryChangesView"
+        ]
+    ],
+    "persist": [
+        "registrychangesview.cfg",
+        "registrychangesview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/registrychangesview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

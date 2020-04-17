@@ -1,17 +1,8 @@
 {
     "version": "1.30",
+    "description": "List Codec drivers and DirectShow filters installed on your system.",
     "homepage": "https://www.nirsoft.net/utils/installed_codec.html",
-    "bin": "InstalledCodec.exe",
-    "shortcuts": [
-        [
-            "InstalledCodec.exe",
-            "NirSoft\\InstalledCodec"
-        ]
-    ],
-    "persist": [
-        "installedcodec_lng.ini",
-        "installedcodec.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/installedcodec-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "c0381e687f67dc3196abcb326bc606150842014f4334e02fd6ae844bdae0710b"
         }
     },
-    "description": "List Codec drivers and DirectShow filters installed on your system.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "InstalledCodec.exe",
+    "shortcuts": [
+        [
+            "InstalledCodec.exe",
+            "NirSoft\\InstalledCodec"
+        ]
+    ],
+    "persist": [
+        "installedcodec.cfg",
+        "installedcodec_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/installedcodec.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

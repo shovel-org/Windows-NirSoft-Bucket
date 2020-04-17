@@ -1,17 +1,8 @@
 {
     "version": "2.36",
+    "description": "Calculate the MD5/SHA1 hashes of your files",
     "homepage": "https://www.nirsoft.net/utils/hash_my_files.html",
-    "bin": "HashMyFiles.exe",
-    "shortcuts": [
-        [
-            "HashMyFiles.exe",
-            "NirSoft\\HashMyFiles"
-        ]
-    ],
-    "persist": [
-        "hashmyfiles_lng.ini",
-        "hashmyfiles.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/hashmyfiles-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "dda87e02d089fd351db4544203b3ff4ef045053790c217da872966475cf6b723"
         }
     },
-    "description": "Calculate the MD5/SHA1 hashes of your files",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "HashMyFiles.exe",
+    "shortcuts": [
+        [
+            "HashMyFiles.exe",
+            "NirSoft\\HashMyFiles"
+        ]
+    ],
+    "persist": [
+        "hashmyfiles.cfg",
+        "hashmyfiles_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/hashmyfiles.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

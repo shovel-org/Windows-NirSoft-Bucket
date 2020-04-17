@@ -1,17 +1,8 @@
 {
     "version": "1.20",
+    "description": "Run a program with different settings that you choose.",
     "homepage": "https://www.nirsoft.net/utils/advanced_run.html",
-    "bin": "AdvancedRun.exe",
-    "shortcuts": [
-        [
-            "AdvancedRun.exe",
-            "NirSoft\\AdvancedRun"
-        ]
-    ],
-    "persist": [
-        "advancedrun_lng.ini",
-        "advancedrun.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/advancedrun-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "e85da432ef581a0f6413b972430da377b0848e3bdc18fad4bfec8fbc100d096e"
         }
     },
-    "description": "Run a program with different settings that you choose.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "AdvancedRun.exe",
+    "shortcuts": [
+        [
+            "AdvancedRun.exe",
+            "NirSoft\\AdvancedRun"
+        ]
+    ],
+    "persist": [
+        "advancedrun.cfg",
+        "advancedrun_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/advancedrun.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

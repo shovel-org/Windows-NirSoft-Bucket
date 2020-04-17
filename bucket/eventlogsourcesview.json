@@ -1,17 +1,8 @@
 {
     "version": "1.00",
+    "description": "Displays the list of all event log sources installed on your system. ",
     "homepage": "https://www.nirsoft.net/utils/event_log_sources_view.html",
-    "bin": "EventLogSourcesView.exe",
-    "shortcuts": [
-        [
-            "EventLogSourcesView.exe",
-            "NirSoft\\EventLogSourcesView"
-        ]
-    ],
-    "persist": [
-        "eventlogsourcesview_lng.ini",
-        "eventlogsourcesview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/eventlogsourcesview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "f60a90200ac6daceba5acf2a24546ca27f0af1b28ad1320e637eaa695a6d03e9"
         }
     },
-    "description": "Displays the list of all event log sources installed on your system. ",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "EventLogSourcesView.exe",
+    "shortcuts": [
+        [
+            "EventLogSourcesView.exe",
+            "NirSoft\\EventLogSourcesView"
+        ]
+    ],
+    "persist": [
+        "eventlogsourcesview.cfg",
+        "eventlogsourcesview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/eventlogsourcesview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

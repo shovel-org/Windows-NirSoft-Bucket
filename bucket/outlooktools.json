@@ -1,7 +1,11 @@
 {
     "version": "4.46",
+    "description": "5 Tools for Microsoft Outlook",
     "homepage": "https://www.nirsoft.net/outlook_office_software.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/packages/outlooktools.zip",
+    "hash": "1a95f3c1f634c23617b892c0537d0fa298e0ce040b58e03b2572d0cbcf14f349",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "nk2edit.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "outlooktools_lng.ini",
-        "outlooktools.cfg"
+        "outlooktools.cfg",
+        "outlooktools_lng.ini"
     ],
-    "hash": "1a95f3c1f634c23617b892c0537d0fa298e0ce040b58e03b2572d0cbcf14f349",
-    "description": "5 Tools for Microsoft Outlook",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/outlooktools.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

@@ -1,7 +1,11 @@
 {
     "version": "1.05",
+    "description": "Run a program from another process that you choose.",
     "homepage": "https://www.nirsoft.net/utils/run_from_process.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/runfromprocess.zip",
+    "hash": "b04b6b48668cfa4585af1d17d9a5b70e8636f2838546524f76f975aaef04c21a",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "RunFromProcess.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "runfromprocess_lng.ini",
-        "runfromprocess.cfg"
+        "runfromprocess.cfg",
+        "runfromprocess_lng.ini"
     ],
-    "hash": "b04b6b48668cfa4585af1d17d9a5b70e8636f2838546524f76f975aaef04c21a",
-    "description": "Run a program from another process that you choose.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/runfromprocess.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

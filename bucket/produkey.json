@@ -1,17 +1,8 @@
 {
     "version": "1.93",
+    "description": "Displays the CD-Keys of MS-Office/Windows installed on your computer.",
     "homepage": "https://www.nirsoft.net/utils/product_cd_key_viewer.html",
-    "bin": "ProduKey.exe",
-    "shortcuts": [
-        [
-            "ProduKey.exe",
-            "NirSoft\\ProduKey"
-        ]
-    ],
-    "persist": [
-        "produkey_lng.ini",
-        "produkey.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/produkey-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "10d40f3f5605ed84f9f0df2bd03432ecd2fa430ececea65d0f99c4f6f3d48f01"
         }
     },
-    "description": "Displays the CD-Keys of MS-Office/Windows installed on your computer.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "ProduKey.exe",
+    "shortcuts": [
+        [
+            "ProduKey.exe",
+            "NirSoft\\ProduKey"
+        ]
+    ],
+    "persist": [
+        "produkey.cfg",
+        "produkey_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/produkey.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

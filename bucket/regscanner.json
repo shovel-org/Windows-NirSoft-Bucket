@@ -1,17 +1,8 @@
 {
     "version": "2.46",
+    "description": "Scan and find values in the Registry",
     "homepage": "https://www.nirsoft.net/utils/regscanner.html",
-    "bin": "RegScanner.exe",
-    "shortcuts": [
-        [
-            "RegScanner.exe",
-            "NirSoft\\RegScanner"
-        ]
-    ],
-    "persist": [
-        "regscanner_lng.ini",
-        "regscanner.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/regscanner-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "1a982cda747fddc1f20a22047ae92015cbe196110e5e73e33dd863c8176076d0"
         }
     },
-    "description": "Scan and find values in the Registry",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "RegScanner.exe",
+    "shortcuts": [
+        [
+            "RegScanner.exe",
+            "NirSoft\\RegScanner"
+        ]
+    ],
+    "persist": [
+        "regscanner.cfg",
+        "regscanner_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/regscanner.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

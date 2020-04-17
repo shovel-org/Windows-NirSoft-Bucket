@@ -1,17 +1,8 @@
 {
     "version": "1.01",
+    "description": "Displays a list of firmware tables (ACPI, SMBIOS) stored on your system.",
     "homepage": "https://www.nirsoft.net/utils/firmware_tables_view.html",
-    "bin": "FirmwareTablesView.exe",
-    "shortcuts": [
-        [
-            "FirmwareTablesView.exe",
-            "NirSoft\\FirmwareTablesView"
-        ]
-    ],
-    "persist": [
-        "firmwaretablesview_lng.ini",
-        "firmwaretablesview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/firmwaretablesview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "ccbcef06ca073392d1f2ac1be63968fecc2f1e3cb855508ac1d5d9e22493c82e"
         }
     },
-    "description": "Displays a list of firmware tables (ACPI, SMBIOS) stored on your system.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "FirmwareTablesView.exe",
+    "shortcuts": [
+        [
+            "FirmwareTablesView.exe",
+            "NirSoft\\FirmwareTablesView"
+        ]
+    ],
+    "persist": [
+        "firmwaretablesview.cfg",
+        "firmwaretablesview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/firmwaretablesview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

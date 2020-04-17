@@ -1,17 +1,8 @@
 {
     "version": "1.65",
+    "description": "Displays the list of visited Web sites in Firefox/Mozilla/Netscape Web browsers.",
     "homepage": "https://www.nirsoft.net/utils/mozilla_history_view.html",
-    "bin": "MozillaHistoryView.exe",
-    "shortcuts": [
-        [
-            "MozillaHistoryView.exe",
-            "NirSoft\\MZHistoryView"
-        ]
-    ],
-    "persist": [
-        "mozillahistoryview_lng.ini",
-        "mozillahistoryview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/mozillahistoryview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "f5fb0c643976fe360a660086dd35540c8b6bf61915bf52c5d732b7bb75d62e87"
         }
     },
-    "description": "Displays the list of visited Web sites in Firefox/Mozilla/Netscape Web browsers.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "MozillaHistoryView.exe",
+    "shortcuts": [
+        [
+            "MozillaHistoryView.exe",
+            "NirSoft\\MZHistoryView"
+        ]
+    ],
+    "persist": [
+        "mozillahistoryview.cfg",
+        "mozillahistoryview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/mozillahistoryview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

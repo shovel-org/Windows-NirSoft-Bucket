@@ -1,7 +1,11 @@
 {
     "version": "1.55",
+    "description": "view country information about IP addresses.",
     "homepage": "https://www.nirsoft.net/utils/ip_country_info_offline.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/ipinfooffline.zip",
+    "hash": "7abb35fd847952657d78a71c1acdae4eb41537a46efe04d220afb1526ff4df03",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "IPInfoOffline.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "ipinfooffline_lng.ini",
-        "ipinfooffline.cfg"
+        "ipinfooffline.cfg",
+        "ipinfooffline_lng.ini"
     ],
-    "hash": "7abb35fd847952657d78a71c1acdae4eb41537a46efe04d220afb1526ff4df03",
-    "description": "view country information about IP addresses.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/ipinfooffline.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

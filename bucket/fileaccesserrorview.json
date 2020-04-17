@@ -1,17 +1,8 @@
 {
     "version": "1.21",
+    "description": "Displays file access error information",
     "homepage": "https://www.nirsoft.net/utils/file_access_error_view.html",
-    "bin": "FileAccessErrorView.exe",
-    "shortcuts": [
-        [
-            "FileAccessErrorView.exe",
-            "NirSoft\\FileAccessErrorView"
-        ]
-    ],
-    "persist": [
-        "fileaccesserrorview_lng.ini",
-        "fileaccesserrorview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/fileaccesserrorview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "832e2e5ea77a44b6c807fbb2211e198a61c7839f02019f6e245eb6249b0edbd1"
         }
     },
-    "description": "Displays file access error information",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "FileAccessErrorView.exe",
+    "shortcuts": [
+        [
+            "FileAccessErrorView.exe",
+            "NirSoft\\FileAccessErrorView"
+        ]
+    ],
+    "persist": [
+        "fileaccesserrorview.cfg",
+        "fileaccesserrorview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/fileaccesserrorview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

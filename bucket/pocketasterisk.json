@@ -1,7 +1,11 @@
 {
     "version": "1.00",
+    "description": "Reveals the passwords stored behind the asterisks ('***')",
     "homepage": "https://www.nirsoft.net/pocket_pc/pocket_asterisk.html",
+    "license": "Freeware",
     "url": "https://www.nirsoft.net/pocket_pc/pocketasterisk.zip",
+    "hash": "823acbc7958014ec2999b5b61408f0415a90d428707fe158b3f14db6f8612ebd",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "PocketAsterisk.exe",
     "shortcuts": [
         [
@@ -10,13 +14,9 @@
         ]
     ],
     "persist": [
-        "pocketasterisk_lng.ini",
-        "pocketasterisk.cfg"
+        "pocketasterisk.cfg",
+        "pocketasterisk_lng.ini"
     ],
-    "hash": "823acbc7958014ec2999b5b61408f0415a90d428707fe158b3f14db6f8612ebd",
-    "description": "Reveals the passwords stored behind the asterisks ('***')",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
     "checkver": {
         "url": "https://www.nirsoft.net/pad/pocketasterisk.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"

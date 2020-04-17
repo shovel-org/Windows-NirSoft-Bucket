@@ -1,17 +1,8 @@
 {
     "version": "1.36",
+    "description": "Shows installed programs on your system and allows you to uninstall them.",
     "homepage": "https://www.nirsoft.net/utils/uninstall_view.html",
-    "bin": "UninstallView.exe",
-    "shortcuts": [
-        [
-            "UninstallView.exe",
-            "NirSoft\\UninstallView"
-        ]
-    ],
-    "persist": [
-        "uninstallview_lng.ini",
-        "uninstallview.cfg"
-    ],
+    "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/uninstallview-x64.zip",
@@ -22,9 +13,18 @@
             "hash": "1b82fd46125a90d1eacda98b4967a335463117768946549820ade63d2948e143"
         }
     },
-    "description": "Shows installed programs on your system and allows you to uninstall them.",
-    "license": "Freeware",
-    "notes": "If this application is useful to you, please consider donating to nirsoft.",
+    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
+    "bin": "UninstallView.exe",
+    "shortcuts": [
+        [
+            "UninstallView.exe",
+            "NirSoft\\UninstallView"
+        ]
+    ],
+    "persist": [
+        "uninstallview.cfg",
+        "uninstallview_lng.ini"
+    ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/uninstallview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
