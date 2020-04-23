@@ -1,10 +1,10 @@
 {
-    "version": "1.21",
+    "version": "1.25",
     "description": "Displays the list of all folder settings saved by Windows. ",
     "homepage": "https://www.nirsoft.net/utils/shell_bags_view.html",
     "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/shellbagsview.zip",
-    "hash": "8ea9c638220d70effb8c9e491e8dca6c0096cd0da8224e576a07bb7c385c2db6",
+    "hash": "4fe107bcd0cd132252c25a85a677687f6d37ebdc5b0662a1953476e925ea0822",
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "ShellBagsView.exe",
     "shortcuts": [
