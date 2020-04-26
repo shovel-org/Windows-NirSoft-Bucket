@@ -1,16 +1,16 @@
 {
-    "version": "2.17",
+    "version": "2.18",
     "description": "Display a general statistics of your Outlook emails.",
     "homepage": "https://www.nirsoft.net/utils/outlook_statistics.html",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/outlookstatview-x64.zip",
-            "hash": "4de8acad4066fdb447a21ec97676278b1fc3d6781ee5b3bbb524ade23f461dad"
+            "hash": "f99acd3015f6ecf8e9b2e84fa2ba7d2450355ae6e7fadc78d321d7433c0f7cf8"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/outlookstatview.zip",
-            "hash": "a743607ed8602d1d191313ed8723d8a6b94fe1f44bdcf6babcd726154565591e"
+            "hash": "687a84a685ce40133cf35e78ae5c61911c880d55aeb78163c7e6bd40fd635c6c"
         }
     },
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
