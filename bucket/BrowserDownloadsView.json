@@ -1,16 +1,16 @@
 {
-    "version": "1.16",
+    "version": "1.17",
     "description": "Displays the details of downloaded files of Chrome and Firefox Web browsers",
     "homepage": "https://www.nirsoft.net/utils/web_browser_downloads_view.html",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/browserdownloadsview-x64.zip",
-            "hash": "4b95098d98116014ba25f52a675b14beb491c61bdef8e298d98bcfa731f99d2d"
+            "hash": "1ece5e733bfac2b59df388a0b2c67d05b902fce37320fa47969f7fc804627a7a"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/browserdownloadsview.zip",
-            "hash": "46cd817a1e8addd79da790fc4cbbde50363c1d35c5fa6eddcb3690d82dbbd261"
+            "hash": "496ac0c936b77969e1c0ad920de68701a5802810dad1011a1e218e3410ef27fe"
         }
     },
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
