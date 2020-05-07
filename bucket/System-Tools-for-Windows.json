@@ -1,10 +1,10 @@
 {
-    "version": "5.40",
+    "version": "5.50",
     "description": "Package of system tools for Windows",
     "homepage": "https://www.nirsoft.net/system_tools.html",
     "license": "Freeware",
     "url": "https://www.nirsoft.net/packages/systools.zip",
-    "hash": "401672313284ac62d7835f43b3c01bb16eda38a7fdb5ae2554732e9f599a180b",
+    "hash": "043edd03f99353f3180d08cc0e7504a7658b0cb4cab1a22c903806c865403b6d",
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "ProduKey.exe",
     "shortcuts": [
