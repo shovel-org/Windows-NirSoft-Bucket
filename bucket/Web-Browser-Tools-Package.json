@@ -1,10 +1,10 @@
 {
-    "version": "3.75",
+    "version": "3.80",
     "description": "Package of Web browser tools for Windows",
     "homepage": "https://www.nirsoft.net/web_browser_tools.html",
     "license": "Freeware",
     "url": "https://www.nirsoft.net/packages/brtools.zip",
-    "hash": "9cde6b5449fdfb2c99665643a0cb6b874fa693bf8398f4cb2b24a49799fa4df8",
+    "hash": "e5d12c95bd29aea268f25d38fbb16dfe93159ef3b61e1a42327a3bcd20cdc227",
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "MozillaHistoryView.exe",
     "shortcuts": [
