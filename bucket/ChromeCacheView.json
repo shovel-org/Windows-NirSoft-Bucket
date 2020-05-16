@@ -1,10 +1,10 @@
 {
-    "version": "2.15",
+    "version": "2.20",
     "description": "Chrome Browser Cache Viewer",
     "homepage": "https://www.nirsoft.net/utils/chrome_cache_view.html",
     "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/chromecacheview.zip",
-    "hash": "65f0deaf6f76c35531fa4ee8382f92ec96e99e11143b740c00b7a88273d89de8",
+    "hash": "04126243314b1ea475db2e848cfe8d6a817d1525434e53b3e533c3beee2c01ac",
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "ChromeCacheView.exe",
     "shortcuts": [
