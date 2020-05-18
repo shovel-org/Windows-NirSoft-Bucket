@@ -1,16 +1,16 @@
 {
-    "version": "1.20",
+    "version": "1.21",
     "description": "Network discovery tool that listens to network packets on network adapter using a capture driver and accumulates a list of computer and devices currently connected to network.",
     "homepage": "https://www.nirsoft.net/utils/who_is_connected_sniffer.html",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/whoisconnectedsniffer-x64.zip",
-            "hash": "7161d955ddb4599d03706fe038d9fb6eccab59f641ae09935742d72810fa8b5d"
+            "hash": "4e6198717db2e32889d35ac992090fce7a2e625677c4c0f1effabadbff9de482"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/whoisconnectedsniffer.zip",
-            "hash": "5b5f165362bf2e7174003eaf466607ee81dc6cc94f860b456b4244d33d0b677c"
+            "hash": "827e893a11d8e04c311ddf2b4444b4a83a8d644cf22d987b84ea1758eab7d802"
         }
     },
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
