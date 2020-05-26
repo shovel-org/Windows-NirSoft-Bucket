@@ -1,10 +1,10 @@
 {
-    "version": "2.05",
+    "version": "2.06",
     "description": "Recovers lost passwords from Web browser.",
     "homepage": "https://www.nirsoft.net/utils/web_browser_password.html",
     "license": "Freeware",
     "url": "https://www.nirsoft.net/toolsdownload/webbrowserpassview.zip#/cosi.cosi",
-    "hash": "1c9a25176a1d8a00457987e9e82b836c66980613869bb756f928e485f65d5f6e",
+    "hash": "84e70c0a93f222d37cc89bcac80b2ae55b40067dfb7b54c45b258b2bba1d26ee",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\$fname\" -Switches '-pwbpv28821@'",
         "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }"
