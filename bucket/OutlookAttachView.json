@@ -1,16 +1,16 @@
 {
-    "version": "3.35",
+    "version": "3.40",
     "description": "Extract multiple attachments from Outlook.",
     "homepage": "https://www.nirsoft.net/utils/outlook_attachment.html",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/outlookattachview-x64.zip",
-            "hash": "da97f6dfa3a084de75b94ce69cf94bb022c32f3d729bf4fe062dc934cf0e2c58"
+            "hash": "1143d473a8c9b02b53c8922e851a24bd65a6e08effd286cebf4cd2fa72e6fd52"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/outlookattachview.zip",
-            "hash": "051fef86f485a6a5f51c362a8241102829570bb88b14f9c95f057509e27bc07e"
+            "hash": "c7f4e01ae2a4465e33922eca1a83c7e9b4e1aa433d33fed3327460cb5a0c29ad"
         }
     },
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
