@@ -4,7 +4,7 @@
     "homepage": "https://www.nirsoft.net/utils/monitor_info_view.html",
     "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/monitorinfoview.zip",
-    "hash": "9ed7ac01f40c5c5a1708d0a0323d21b7e203d8250f05d93c571e5221c6eeb4e6",
+    "hash": "1d9b7093b42f491bb13098649538d3516b8df318baca2773736ae48281ae1aef",
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "MonitorInfoView.exe",
     "shortcuts": [

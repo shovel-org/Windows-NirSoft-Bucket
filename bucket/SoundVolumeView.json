@@ -1,16 +1,16 @@
 {
-    "version": "2.30",
+    "version": "2.10",
     "description": "View/change sound levels & save/load sound level profiles on Windows Vista/7/8",
     "homepage": "https://www.nirsoft.net/utils/sound_volume_view.html",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/soundvolumeview-x64.zip",
-            "hash": "72a38d6f098925573b1e696b45aa338753a0c8f4902c62fbdbf46b874fc7cf52"
+            "hash": "42410137ba837288a945c8567c2349bc970474363bdf1e5f129d86bfa3e5d4ab"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/soundvolumeview.zip",
-            "hash": "5f811645065c4a069b7a029aa420aaac4d55f6e70cd1c74918421dde9b9d442e"
+            "hash": "071219afbc849fdc7d6051d84884259439854a6465d9316fc53e5713a2ec7203"
         }
     },
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
@@ -25,10 +25,6 @@
         "soundvolumeview.cfg",
         "soundvolumeview_lng.ini"
     ],
-    "checkver": {
-        "url": "https://www.nirsoft.net/pad/soundvolumeview.xml",
-        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
-    },
     "autoupdate": {
         "architecture": {
             "64bit": {
