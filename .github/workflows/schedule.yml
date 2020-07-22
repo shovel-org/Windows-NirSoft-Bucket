@@ -7,7 +7,7 @@ jobs:
     name: Excavate
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - name: Excavate
         uses: Ash258/Scoop-GithubActions@master-win
         env:
