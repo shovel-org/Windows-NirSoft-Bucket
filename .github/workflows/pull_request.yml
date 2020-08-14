@@ -7,9 +7,9 @@ jobs:
     name: PullRequestHandler
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@main
-      - name: PullRequestHandler
-        uses: Ash258/Scoop-GithubActions@master-win
-        env:
-          GITH_EMAIL: cabera.jakub@gmail.com
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/checkout@main
+    - name: PullRequestHandler
+      uses: Ash258/Scoop-GithubActions@stable-win
+      env:
+        GITH_EMAIL: cabera.jakub@gmail.com
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

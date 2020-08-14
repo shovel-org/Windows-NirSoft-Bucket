@@ -2,6 +2,8 @@
 
 `scoop bucket add nirsoft 'https://github.com/Ash258/Scoop-NirSoft.git'`
 
+❗❗ [For the most optimized scoop experience use "shovel" implementation](https://github.com/Ash258/Scoop-Core) ❗❗
+
 If any of application is useful to you, consider [donation to NirSoft](https://www.nirsoft.net/donate.html).
 
 # TODO: Check and finish all manifests
