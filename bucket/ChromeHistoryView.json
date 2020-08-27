@@ -1,10 +1,10 @@
 {
-    "version": "1.41",
+    "version": "1.42",
     "description": "View the browsing history of Chrome Web browser",
     "homepage": "https://www.nirsoft.net/utils/chrome_history_view.html",
     "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/chromehistoryview.zip",
-    "hash": "ed08e2f1d7e005170c4a6efad3e588e83005ef14546fa93b1ce61ef3e78aaaf8",
+    "hash": "f8d6d838375097803621ec6c00afc60b04ff4221ae76b065b1686410bfe0352b",
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "ChromeHistoryView.exe",
     "shortcuts": [
