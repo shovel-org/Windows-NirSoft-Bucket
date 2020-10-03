@@ -1,10 +1,10 @@
 {
-    "version": "1.12",
+    "version": "1.13",
     "description": "Shows a log of connected/disconnected computers on your network.",
     "homepage": "https://www.nirsoft.net/utils/network_connect_log.html",
     "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/networkconnectlog.zip",
-    "hash": "c3c8f47fd6bcaf911acb5edfeaa2d823dd85bec78e1219262cf09e8f29a6f758",
+    "hash": "cdabc2c0ccb57739e10719b0c2953999249feebfb6eb4e34affb01f1657b6520",
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "NetworkConnectLog.exe",
     "shortcuts": [
