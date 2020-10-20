@@ -1,10 +1,10 @@
 {
-    "version": "1.88",
+    "version": "1.90",
     "description": "Recover passwords from router config file.",
     "homepage": "https://www.nirsoft.net/utils/router_password_recovery.html",
     "license": "Freeware",
     "url": "https://www.nirsoft.net/toolsdownload/routerpassview.zip",
-    "hash": "7e2ce07d2cc1d1a0af64f8d2125ac048a83500c626fb39110ab670d47eafe5c8",
+    "hash": "4da76571b741610b55e261d882b572c36d740ccbf4ecb5d8427d109a68110f0c",
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "RouterPassView.exe",
     "shortcuts": [
