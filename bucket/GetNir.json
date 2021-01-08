@@ -1,10 +1,10 @@
 {
-    "version": "1.00",
+    "version": "1.01",
     "description": "Command line tool to extract values from tab-delimited and comma-delimited data",
     "homepage": "https://www.nirsoft.net/utils/get_nir_command_line_tool.html",
     "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/getnir.zip",
-    "hash": "cb0291f4f3990fd62aaadb372e5c54eff6ad4920f5b8fa6531d0c0abd1560da8",
+    "hash": "f50dd73972c8295fb9b58296955cbfdc8c2025992fed83c0c96fd1ce1b71632c",
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "GetNir.exe",
     "shortcuts": [
