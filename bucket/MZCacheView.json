@@ -3,25 +3,32 @@
     "description": "List all files currently stored in the cache of Firefox/Mozilla browser.",
     "homepage": "https://www.nirsoft.net/utils/mozilla_cache_viewer.html",
     "license": "Freeware",
-    "url": "https://www.nirsoft.net/utils/mozillacacheview.zip",
-    "hash": "f966aebedb1c23a97a122fa9bde178cefaf1806de2614ca59fa0c0830f3eee59",
-    "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
-    "bin": "MozillaCacheView.exe",
+    "url": "https://www.nirsoft.net/utils/mzcacheview.zip",
+    "hash": "6ce907c1291121cc7337f7e3cc6b01beb178e0a4f67c96b82dea9101df41f3cd",
+    "pre_install": [
+        "'.cfg', '_lng.ini' | ForEach-Object {",
+        "    if (Test-Path \"$persist_dir\\mozillacacheview$_\") {",
+        "        Rename-Item \"$persist_dir\\mozillacacheview$_\" \"MZCacheView$_\"",
+        "    }",
+        "}",
+        "$manifest.persist | ForEach-Object { if (!(Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }"
+    ],
+    "bin": "MZCacheView.exe",
     "shortcuts": [
         [
-            "MozillaCacheView.exe",
+            "MZCacheView.exe",
             "NirSoft\\MZCacheView"
         ]
     ],
     "persist": [
-        "mozillacacheview.cfg",
-        "mozillacacheview_lng.ini"
+        "MZCacheView.cfg",
+        "MZCacheView_lng.ini"
     ],
     "checkver": {
         "url": "https://www.nirsoft.net/pad/mozillacacheview.xml",
         "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
     },
     "autoupdate": {
-        "url": "https://www.nirsoft.net/utils/mozillacacheview.zip"
+        "url": "https://www.nirsoft.net/utils/mzcacheview.zip"
     }
 }
