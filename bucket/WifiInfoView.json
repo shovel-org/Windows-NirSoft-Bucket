@@ -1,10 +1,10 @@
 {
-    "version": "2.67",
+    "version": "2.68",
     "description": "Scans the wireless networks in area and displays extensive information about them.",
     "homepage": "https://www.nirsoft.net/utils/wifi_information_view.html",
     "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/wifiinfoview.zip",
-    "hash": "d6c943d349b2f4a6730b3d14ec0be45c13f9938c7a952afb9bfd5f513d2e9a9d",
+    "hash": "679b1098aff436e29f557a7afe33dbecbe54b53cb586a4bb0df41674455352a4",
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "WifiInfoView.exe",
     "shortcuts": [
