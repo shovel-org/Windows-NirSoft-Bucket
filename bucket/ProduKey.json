@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/produkey-x64.zip",
-            "hash": "4e1ac22dd0c349c1246669df7cfdfd0ce85723a27aa5f5b7c0fdc456c34ccb8b"
+            "hash": "a6b74933c14d767811e57809c333f85691f5facef73bca9b4b17b340bdac14ab"
         },
         "32bit": {
             "url": "https://www.nirsoft.net/utils/produkey.zip",
-            "hash": "c425f4fed480f7c08091e4915f72eb7183a01a400c5772eadb55f5b885aff3c9"
+            "hash": "5b32a4946b2f9f6299786d8a9a75c024aebf1bdfb3a8674a4e855c453fdad1d5"
         }
     },
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
