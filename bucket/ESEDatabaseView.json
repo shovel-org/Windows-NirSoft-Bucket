@@ -1,10 +1,10 @@
 {
-    "version": "1.65",
+    "version": "1.66",
     "description": "View the content of ESE database files (.edb files)",
     "homepage": "https://www.nirsoft.net/utils/ese_database_view.html",
     "license": "Freeware",
     "url": "https://www.nirsoft.net/utils/esedatabaseview.zip",
-    "hash": "c7ef9710995cd335c7fb1c57c677ef4c208076fecc37f7d00651f045e204f08d",
+    "hash": "ec0182fbc4770a182074537ff572c7de8e5baead330e3165d56485a6f1cda305",
     "pre_install": "$manifest.persist | ForEach-Object { if (-not (Test-Path \"$persist_dir\\$_\")) { New-Item \"$dir\\$_\" | Out-Null } }",
     "bin": "ESEDatabaseView.exe",
     "shortcuts": [
