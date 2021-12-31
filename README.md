@@ -10,6 +10,7 @@ If any of application is useful to you, consider [donation to NirSoft](https://w
 - [ ] Add URL to license field
 - [ ] Revalidate all needed persists
 - [ ] Investigate commandline arguments
+- [ ] Investigate need for purge uninstallers
 
 | Manifest Name                                          | Tested |  GUI  | Command line support | arm64 support |
 | :----------------------------------------------------- | :----: | :---: | :------------------: | :-----------: |
