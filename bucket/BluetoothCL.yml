@@ -1,7 +1,9 @@
 version: "1.07"
 description: Show bluetooth devices    list
 homepage: https://www.nirsoft.net/utils/bluetoothcl.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/bluetoothcl.zip
 hash: 025a4a02527a533299370be128323e4a2443fde0f404b2cf8793b3748c0c531f
 pre_install: Test-Persistence $manifest.persist

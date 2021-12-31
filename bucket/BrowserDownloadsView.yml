@@ -1,7 +1,9 @@
 version: "1.40"
 description: Displays the details of downloaded files of Chrome and Firefox Web browsers
 homepage: https://www.nirsoft.net/utils/web_browser_downloads_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/browserdownloadsview-x64.zip

@@ -1,7 +1,9 @@
 version: "1.05"
 description: Dumps the list of NTFS alternate streams
 homepage: https://www.nirsoft.net/utils/alternate_stream_dump.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/altstreamdump.zip
 hash: d65d237b0c8c8b2dba51d8784090fe3ded92a5c3e841db3354c3dce3fbeaf905
 pre_install: Test-Persistence $manifest.persist

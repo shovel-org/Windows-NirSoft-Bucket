@@ -1,7 +1,9 @@
 version: "1.36"
 description: Displays read/write operations of every application running on your system.
 homepage: https://www.nirsoft.net/utils/app_read_write_counter.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/appreadwritecounter-x64.zip

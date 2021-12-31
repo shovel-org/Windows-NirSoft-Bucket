@@ -1,7 +1,9 @@
 version: "1.25"
 description: Displays battery information on laptops and netbooks.
 homepage: https://www.nirsoft.net/utils/battery_information_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/batteryinfoview.zip
 hash: ecbf6ecb79d19c821f04c39f5c622ed85c38f5a6deeedc442366f175a2d016e1
 pre_install: Test-Persistence $manifest.persist

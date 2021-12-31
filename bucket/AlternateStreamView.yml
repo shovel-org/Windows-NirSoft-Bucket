@@ -1,7 +1,9 @@
 version: "1.56"
 description: Find all hidden alternate streams stored in the file system.
 homepage: https://www.nirsoft.net/utils/alternate_data_streams.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/alternatestreamview-x64.zip

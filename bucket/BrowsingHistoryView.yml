@@ -1,7 +1,9 @@
 version: "2.50"
 description: View browsing history of popular Web browsers
 homepage: https://www.nirsoft.net/utils/browsing_history_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/browsinghistoryview-x64.zip

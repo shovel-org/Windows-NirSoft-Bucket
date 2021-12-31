@@ -1,7 +1,9 @@
 version: "1.01"
 description: Extract URL addresses from HTML pages.
 homepage: https://www.nirsoft.net/utils/addrview.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/addrview.zip
 hash: 806883045b6b510625d05ae965222b80c451a0b18ce30343ec9607cca10d4017
 pre_install: Test-Persistence $manifest.persist

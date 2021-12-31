@@ -1,7 +1,9 @@
 version: "1.66"
 description: Monitors the activity of Bluetooth devices around you.
 homepage: https://www.nirsoft.net/utils/bluetooth_viewer.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/bluetoothview.zip
 hash: 0c85497da7a0b4ecee9cdd5e55afa9bc248cd282dcd2eacc7a3ad1f16eb4ecbc
 pre_install: Test-Persistence $manifest.persist

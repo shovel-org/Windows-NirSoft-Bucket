@@ -1,7 +1,9 @@
 version: "1.27"
 description: Displays the details of all Web browser addons/plugins installed in your system.
 homepage: https://www.nirsoft.net/utils/web_browser_addons_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/browseraddonsview-x64.zip

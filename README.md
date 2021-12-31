@@ -7,7 +7,6 @@ If any of application is useful to you, consider [donation to NirSoft](https://w
 # TODO: Check and finish all manifests
 
 - [ ] Add changelogs
-- [ ] Add URL to license field
 - [ ] Revalidate all needed persists
 - [ ] Investigate commandline arguments
 - [ ] Investigate need for purge uninstallers

@@ -1,7 +1,9 @@
 version: "1.12"
 description: Creates a log of Bluetooth activity in your area.
 homepage: https://www.nirsoft.net/utils/bluetooth_log_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/bluetoothlogview.zip
 hash: baaf54b422aa8a5c5dd6a21e842f40c04186fd5a33bf6c126538009ffc3f31c9
 pre_install: Test-Persistence $manifest.persist

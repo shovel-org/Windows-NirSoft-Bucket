@@ -1,7 +1,9 @@
 version: "1.50"
 description: Run a program with different settings that you choose.
 homepage: https://www.nirsoft.net/utils/advanced_run.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/advancedrun-x64.zip
