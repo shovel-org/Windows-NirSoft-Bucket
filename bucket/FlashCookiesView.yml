@@ -1,7 +1,9 @@
 version: "1.15"
 description: View Flash cookies stored in your computer.
 homepage: https://www.nirsoft.net/utils/flash_cookies_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/flashcookiesview.zip
 hash: a8217a04b664d055cd137620f8f7585d2dd0c326cf90d4a01383b9e5f154b86e
 pre_install: Test-Persistence $manifest.persist

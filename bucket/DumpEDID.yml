@@ -1,7 +1,9 @@
 version: "1.07"
 description: Dump EDID information into the console window.
 homepage: https://www.nirsoft.net/utils/dump_edid.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/dumpedid.zip
 hash: 1773478ecec2d0e7dcb8d41dd3dd1353e26446a4a798ab294a1ce652a9b84609
 pre_install: Test-Persistence $manifest.persist

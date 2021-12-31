@@ -1,7 +1,9 @@
 version: "1.30"
 description: Packet sniffer tool that captures all Web site cookies sent between the Web browser and the Web server and displays them in a simple cookies table.
 homepage: https://www.nirsoft.net/utils/web_cookies_sniffer.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/webcookiessniffer-x64.zip

@@ -1,7 +1,9 @@
 version: "1.18"
 description: Extract resources from dll/ocx/exe files.
 homepage: https://www.nirsoft.net/utils/resources_extract.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/resourcesextract-x64.zip

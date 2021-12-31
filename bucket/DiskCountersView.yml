@@ -1,7 +1,9 @@
 version: "1.27"
 description: Show disk drive read/write counters.
 homepage: https://www.nirsoft.net/utils/disk_counters_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/diskcountersview.zip
 hash: 3b56062d89de1dc141ea873fd407aed0988d8b11d6d1e45e344d38aa971419dc
 pre_install: Test-Persistence $manifest.persist

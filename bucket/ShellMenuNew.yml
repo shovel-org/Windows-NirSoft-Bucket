@@ -1,7 +1,9 @@
 version: "1.02"
 description: Disable/Enable items in the New submenu of Explorer.
 homepage: https://www.nirsoft.net/utils/shell_menu_new.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/shellmenunew.zip
 hash: 0e5cf7e7f8df686d3d08caa79c251b61eff829e48c5175bd5bd998d433867ab6
 pre_install: Test-Persistence $manifest.persist

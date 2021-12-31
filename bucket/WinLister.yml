@@ -1,7 +1,9 @@
 version: "1.22"
 description: Displays the list of opened windows on system.
 homepage: https://www.nirsoft.net/utils/winlister.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/winlister-x64.zip

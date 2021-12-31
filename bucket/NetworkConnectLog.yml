@@ -1,7 +1,9 @@
 version: "1.13"
 description: Shows a log of connected/disconnected computers on your network.
 homepage: https://www.nirsoft.net/utils/network_connect_log.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/networkconnectlog.zip
 hash: cdabc2c0ccb57739e10719b0c2953999249feebfb6eb4e34affb01f1657b6520
 pre_install: Test-Persistence $manifest.persist

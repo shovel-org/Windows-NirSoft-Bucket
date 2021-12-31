@@ -1,7 +1,9 @@
 version: "2.27"
 description: View/change sound levels & save/load sound level profiles on Windows Vista/7/8
 homepage: https://www.nirsoft.net/utils/sound_volume_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/soundvolumeview-x64.zip

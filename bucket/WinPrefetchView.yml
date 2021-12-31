@@ -1,7 +1,9 @@
 version: "1.37"
 description: Reads the Prefetch files stored in system and displays the information stored in them.
 homepage: https://www.nirsoft.net/utils/win_prefetch_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/winprefetchview-x64.zip

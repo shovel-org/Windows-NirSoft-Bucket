@@ -1,7 +1,9 @@
 version: "1.11"
 description: Scans all computers in the IP addresses range you choose, using NetBIOS protocol
 homepage: https://www.nirsoft.net/utils/netbios_scanner.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/netbscanner.zip
 hash: f4970e58d94ef7112924b16ae81187e18d9bad26d407e9b6a37172c5d5973c3c
 pre_install: Test-Persistence $manifest.persist

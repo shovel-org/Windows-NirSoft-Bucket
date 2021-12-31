@@ -1,7 +1,9 @@
 version: "1.01"
 description: Displays a list of firmware tables (ACPI, SMBIOS) stored on your system.
 homepage: https://www.nirsoft.net/utils/firmware_tables_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/firmwaretablesview-x64.zip

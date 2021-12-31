@@ -1,7 +1,9 @@
 version: "1.30"
 description: Shows all system's windows in hierarchical display.
 homepage: https://www.nirsoft.net/utils/winexp.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/winexp.zip
 hash: 12403572fcf3676335c59b72887fa2910e616973938630dc34e7b856aaf34075
 pre_uninstall: |

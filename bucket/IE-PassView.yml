@@ -1,7 +1,9 @@
 version: "1.42"
 description: Recover passwords stored by Internet Explorer (Versions 4.0 - 8.0)
 homepage: https://www.nirsoft.net/utils/internet_explorer_password.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/toolsdownload/iepv.zip#/cosi.cosi
 hash: 8164e8181cd85b4da180bb7671ca04eef548fdabee1696a741ebb88e09b3058f
 pre_install: |

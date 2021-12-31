@@ -1,7 +1,9 @@
 version: "1.26"
 description: View the details of all contacts in your Windows Live Messenger.
 homepage: https://www.nirsoft.net/utils/live_messenger_contacts.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/livecontactsview.zip
 hash: 8cc89f10e002c3aa4da6d711ce4342d318d9cfe4471d38835c89ddb03594119e
 pre_install: Test-Persistence $manifest.persist

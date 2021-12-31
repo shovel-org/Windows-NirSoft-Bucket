@@ -1,7 +1,9 @@
 version: "1.31"
 description: View and modify the settings of your monitor.
 homepage: https://www.nirsoft.net/utils/control_my_monitor.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/controlmymonitor.zip
 hash: 6362d55d9c7cfbd5a84b31cadfcfb21080c5463b2b2179beeedbb3791eabca33
 pre_install: Test-Persistence $manifest.persist

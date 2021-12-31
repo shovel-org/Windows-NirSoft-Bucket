@@ -1,7 +1,9 @@
 version: "1.01"
 description: Reveals the password stored by Microsoft Remote Desktop utility.
 homepage: https://www.nirsoft.net/utils/remote_desktop_password.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/toolsdownload/rdpv.zip
 hash: 528de69797c36423a1e6b64fa8b1825f354e6707f2ca3760d81a9f58d69d58bb
 pre_install: Test-Persistence $manifest.persist

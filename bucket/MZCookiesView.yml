@@ -1,7 +1,9 @@
 version: "1.58"
 description: alternative to the standard 'Cookie Manager' provided by Netscape and Mozilla.
 homepage: https://www.nirsoft.net/utils/mzcv.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/mzcv-x64.zip

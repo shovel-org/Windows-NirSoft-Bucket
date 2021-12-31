@@ -1,7 +1,9 @@
 version: "1.90"
 description: Easily get information about a registered domain.
 homepage: https://www.nirsoft.net/utils/whoiscl.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/whoiscl.zip
 hash: cb042f522ca674288655739db24b389defac0d2f05bd5d7e915aefd3068e4d85
 pre_install: Test-Persistence $manifest.persist

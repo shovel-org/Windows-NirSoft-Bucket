@@ -1,7 +1,9 @@
 version: "1.31"
 description: Change the DNS servers that are used for your Internet connection.
 homepage: https://www.nirsoft.net/utils/quick_set_dns.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/quicksetdns.zip
 hash: 2948a28e9b1347661a0f673cb821cc6e1c9640b2702b7e4289e9d80cc067f1d8
 pre_install: Test-Persistence $manifest.persist

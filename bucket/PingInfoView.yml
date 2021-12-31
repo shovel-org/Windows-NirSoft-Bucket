@@ -1,7 +1,9 @@
 version: "2.22"
 description: ping multiple host names and IP addresses.
 homepage: https://www.nirsoft.net/utils/multiple_ping_tool.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/pinginfoview.zip
 hash: 49ab2000c2aa08482d8b66f0176422323cb542b1f59644028f68374725193d6d
 pre_install: Test-Persistence $manifest.persist

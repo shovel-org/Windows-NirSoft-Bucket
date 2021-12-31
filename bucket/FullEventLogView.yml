@@ -1,7 +1,9 @@
 version: "1.67"
 description: Event log viewer for Windows 10/8/7/Vista.
 homepage: https://www.nirsoft.net/utils/full_event_log_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/fulleventlogview-x64.zip

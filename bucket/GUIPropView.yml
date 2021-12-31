@@ -1,7 +1,9 @@
 version: "1.16"
 description: Displays extensive information about all windows currently opened on your system
 homepage: https://www.nirsoft.net/utils/gui_prop_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/guipropview-x64.zip

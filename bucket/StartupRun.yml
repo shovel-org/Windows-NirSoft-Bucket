@@ -1,7 +1,9 @@
 version: "1.22"
 description: Displays the list of all applications that are loaded on startup.
 homepage: https://www.nirsoft.net/utils/strun.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/strun.zip
 hash: bb4b5eca060e4f7db632b224e971d8a7237e379946c512468ade37ba9eed17a6
 pre_install: Test-Persistence $manifest.persist

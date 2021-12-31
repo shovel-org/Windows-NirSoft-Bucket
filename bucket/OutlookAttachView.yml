@@ -1,7 +1,9 @@
 version: "3.44"
 description: Extract multiple attachments from Outlook.
 homepage: https://www.nirsoft.net/utils/outlook_attachment.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/outlookattachview-x64.zip

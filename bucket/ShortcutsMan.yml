@@ -1,7 +1,9 @@
 version: "1.10"
 description: Lists all shortcuts on your desktop/start menu.
 homepage: https://www.nirsoft.net/utils/shman.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/shman-x64.zip

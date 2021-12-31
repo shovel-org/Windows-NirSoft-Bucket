@@ -1,7 +1,9 @@
 version: "1.46"
 description: View the time/date ranges that your computer was turned on.
 homepage: https://www.nirsoft.net/utils/computer_turned_on_times.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/turnedontimesview.zip
 hash: 1a1c1e6ed4583acb7b0a8960b34f37797fed81fe65dab1c33d1353e3923a9c4e
 pre_install: Test-Persistence $manifest.persist

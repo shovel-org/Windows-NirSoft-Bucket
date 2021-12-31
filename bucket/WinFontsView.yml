@@ -1,7 +1,9 @@
 version: "1.10"
 description: View samples of Windows fonts installed on system.
 homepage: https://www.nirsoft.net/utils/windows_fonts_viewer.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/winfontsview.zip
 hash: 1752867afb28afbeec8a48135db1e1fbbd1e4a638ddea5fa4ad1fd487d108de2
 pre_install: Test-Persistence $manifest.persist

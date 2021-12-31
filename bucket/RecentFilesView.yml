@@ -1,7 +1,9 @@
 version: "1.33"
 description: Display the list of recently opened files
 homepage: https://www.nirsoft.net/utils/recent_files_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/recentfilesview.zip
 hash: 6920cc0165fcffa1a009c663c3dce7c84a62ca0e4b73d9d86dc9cc0dc39dca61
 pre_install: Test-Persistence $manifest.persist

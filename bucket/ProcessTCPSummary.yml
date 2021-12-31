@@ -1,7 +1,9 @@
 version: "1.15"
 description: Displays TCP connections summary
 homepage: https://www.nirsoft.net/utils/process_tcp_summary.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/processtcpsummary-x64.zip

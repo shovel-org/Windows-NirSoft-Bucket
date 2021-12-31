@@ -1,7 +1,9 @@
 version: "1.10"
 description: Lists the installed Codec, and allows you to disable/enable them.
 homepage: https://www.nirsoft.net/utils/mmview.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/mmview.zip
 hash: 8dfcf804a9fe9c0e07893ececb083459c24d64ed7c9d9d35ac40e60d4f55bebe
 pre_install: Test-Persistence $manifest.persist

@@ -1,7 +1,9 @@
 version: "2.01"
 description: Displays the details of shell extensions installed on your computer.
 homepage: https://www.nirsoft.net/utils/shexview.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/shexview-x64.zip

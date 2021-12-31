@@ -1,7 +1,9 @@
 version: "1.40"
 description: Cache viewer for Opera Web browser.
 homepage: https://www.nirsoft.net/utils/opera_cache_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/operacacheview.zip
 hash: b205f7d66e4fdb7e2c3af7ab3903cb6cfa15467f0913a30f49a93acea971780e
 pre_install: Test-Persistence $manifest.persist

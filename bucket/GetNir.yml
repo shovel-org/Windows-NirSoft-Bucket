@@ -1,7 +1,9 @@
 version: "1.01"
 description: Command line tool to extract values from tab-delimited and comma-delimited data
 homepage: https://www.nirsoft.net/utils/get_nir_command_line_tool.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/getnir.zip
 hash: f50dd73972c8295fb9b58296955cbfdc8c2025992fed83c0c96fd1ce1b71632c
 pre_install: Test-Persistence $manifest.persist

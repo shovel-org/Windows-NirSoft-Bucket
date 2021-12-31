@@ -1,7 +1,9 @@
 version: "1.20"
 description: displays the details of all installed Microsoft Office add-ins on your computer.
 homepage: https://www.nirsoft.net/utils/officeins.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/officeins-x64.zip

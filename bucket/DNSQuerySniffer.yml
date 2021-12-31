@@ -1,7 +1,9 @@
 version: "1.85"
 description: Network sniffer utility that shows the DNS queries sent on your system.
 homepage: https://www.nirsoft.net/utils/dns_query_sniffer.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/dnsquerysniffer-x64.zip

@@ -1,7 +1,9 @@
 version: "3.42"
 description: Full NK2 (AutoComplete) editor for Microsoft Outlook
 homepage: https://www.nirsoft.net/utils/outlook_nk2_edit.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/nk2edit-x64.zip

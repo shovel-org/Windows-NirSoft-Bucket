@@ -1,7 +1,9 @@
 version: "2.33"
 description: Displays the details of all recipients stored in the address books of Outlook
 homepage: https://www.nirsoft.net/utils/outlook_address_book_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/outlookaddressbookview-x64.zip

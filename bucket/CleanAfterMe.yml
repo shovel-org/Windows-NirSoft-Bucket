@@ -1,7 +1,9 @@
 version: "1.37"
 description: Clean files and Registry values in your system.
 homepage: https://www.nirsoft.net/utils/clean_after_me.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/cleanafterme.zip
 hash: 9d2c0580075ff8777e043260af63c8e082cbfc1fd5ac4a002c0a8ecd87cfc132
 pre_install: Test-Persistence $manifest.persist

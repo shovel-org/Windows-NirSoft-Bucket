@@ -1,7 +1,9 @@
 version: "1.63"
 description: reveals the passwords stored on your computer by Internet Explorer.
 homepage: https://www.nirsoft.net/utils/pspv.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/toolsdownload/pspv.zip
 hash: 6abf7774b8778430c2d5bdee5335e42fccbf8ea4b7e27439c98d13a5ca9c8dbe
 pre_install: Test-Persistence $manifest.persist

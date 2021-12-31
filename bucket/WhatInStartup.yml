@@ -1,7 +1,9 @@
 version: "1.35"
 description: Displays the list of all applications that are loaded automatically when Windows starts up.
 homepage: https://www.nirsoft.net/utils/what_run_in_startup.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/whatinstartup-x64.zip

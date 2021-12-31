@@ -1,7 +1,9 @@
 version: "1.33"
 description: Displays the list of all Windows updates (Service Packs and Hotfixes) installed on local computer.
 homepage: https://www.nirsoft.net/utils/wul.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/wul.zip
 hash: 944bfcc87558b7315966542c0b3c82110a4754e222e759f091d0b27eb76fc0a7
 pre_install: Test-Persistence $manifest.persist

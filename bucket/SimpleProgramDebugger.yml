@@ -1,7 +1,9 @@
 version: "1.15"
 description: Displays debugging events of a running program.
 homepage: https://www.nirsoft.net/utils/simple_program_debugger.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/simpleprogramdebugger-x64.zip

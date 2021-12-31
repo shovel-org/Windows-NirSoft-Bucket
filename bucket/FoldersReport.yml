@@ -1,7 +1,9 @@
 version: "1.21"
 description: Scans your disk, and displays a report about each folder.
 homepage: https://www.nirsoft.net/utils/folrep.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/folrep.zip
 hash: 82a662e081f86fee20ae390ab83d05ed5a0290a83ba0aaf0c2e50c46bf4e1fdb
 pre_install: Test-Persistence $manifest.persist

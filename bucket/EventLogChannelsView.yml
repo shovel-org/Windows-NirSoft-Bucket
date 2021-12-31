@@ -1,7 +1,9 @@
 version: "1.35"
 description: View,Disable,Enable Event Log Channels.
 homepage: https://www.nirsoft.net/utils/event_log_channels_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/eventlogchannelsview-x64.zip

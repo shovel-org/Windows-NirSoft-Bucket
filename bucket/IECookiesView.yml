@@ -1,7 +1,9 @@
 version: "1.79"
 description: Displays the cookies that Internet Explorer stores on your computer
 homepage: https://www.nirsoft.net/utils/iecookies.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/iecv.zip
 hash: b6d781e15cafd41e059e1f524996192af5321d9f262a3c5f44ea8cd4fb290baf
 pre_install: Test-Persistence $manifest.persist

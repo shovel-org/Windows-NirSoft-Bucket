@@ -1,7 +1,9 @@
 version: "1.50"
 description: Displays the list of all device drivers currently loaded on your system.
 homepage: https://www.nirsoft.net/utils/driverview.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/driverview-x64.zip

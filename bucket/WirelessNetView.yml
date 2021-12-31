@@ -1,7 +1,9 @@
 version: "1.75"
 description: Monitors the activity of wireless networks.
 homepage: https://www.nirsoft.net/utils/wireless_network_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/wirelessnetview.zip
 hash: d33aca4977de8dfaaa859813d21fe7d20709f80ace32302891b604fdc0c6ff78
 pre_install: Test-Persistence $manifest.persist

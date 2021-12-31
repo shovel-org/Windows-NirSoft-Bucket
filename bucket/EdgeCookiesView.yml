@@ -1,7 +1,9 @@
 version: "1.17"
 description: Display cookies from new versions of MS-Edge
 homepage: https://www.nirsoft.net/utils/edge_cookies_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/edgecookiesview.zip
 hash: 2ffad52588c2373f6bf4f6da662af3ed577e00d78260036b5ef87f7e7e5b5c65
 pre_install: Test-Persistence $manifest.persist

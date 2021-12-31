@@ -1,7 +1,9 @@
 version: "1.18"
 description: View/edit file properties
 homepage: https://www.nirsoft.net/utils/windows_property_system_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/propertysystemview-x64.zip

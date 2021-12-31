@@ -1,7 +1,9 @@
 version: "1.00"
 description: Dumps the list of all wireless keys stored by the wireless networks module.
 homepage: https://www.nirsoft.net/utils/wireless_key_dump.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/wirelesskeydump-x64.zip

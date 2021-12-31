@@ -1,7 +1,9 @@
 version: "2.30"
 description: Chrome Browser Cache Viewer
 homepage: https://www.nirsoft.net/utils/chrome_cache_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/chromecacheview.zip
 hash: d8b00c6b13def08f7ea488d82d6f8d02cc2ff4428c27f9a9791fcef93682049f
 pre_install: Test-Persistence $manifest.persist

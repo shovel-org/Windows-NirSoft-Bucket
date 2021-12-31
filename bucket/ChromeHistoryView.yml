@@ -1,7 +1,9 @@
 version: "1.46"
 description: View the browsing history of Chrome Web browser
 homepage: https://www.nirsoft.net/utils/chrome_history_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/chromehistoryview.zip
 hash: 86b4d4e6d18788c7e5528492ab56cf59bf8a4202f9970975aff124bd2b2f0f41
 pre_install: Test-Persistence $manifest.persist

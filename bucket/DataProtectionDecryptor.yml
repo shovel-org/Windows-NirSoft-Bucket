@@ -1,7 +1,9 @@
 version: "1.10"
 description: Decrypt DPAPI-encrypted data of Windows.
 homepage: https://www.nirsoft.net/utils/dpapi_data_decryptor.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/toolsdownload/dataprotectiondecryptor-x64.zip

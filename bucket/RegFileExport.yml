@@ -1,7 +1,9 @@
 version: "1.11"
 description: Export offline Registry file to .reg file
 homepage: https://www.nirsoft.net/utils/registry_file_offline_export.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/regfileexport.zip
 hash: de7282d7d8646ffa212bf2a11b7f537fd3d0febb0b5679bb724a1ca2b946ecd0
 pre_install: Test-Persistence $manifest.persist

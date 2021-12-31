@@ -1,7 +1,9 @@
 version: "1.02"
 description: This utility decrypt and displays the list of all UserAssist entries
 homepage: https://www.nirsoft.net/utils/userassist_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/userassistview.zip
 hash: 11b75025ac99ad31fa2c27b91ebbdb891fced36ff8b2567b0b76146af88d57d9
 pre_install: Test-Persistence $manifest.persist

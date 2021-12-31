@@ -1,7 +1,9 @@
 version: "1.06"
 description: Displays all world time zones.
 homepage: https://www.nirsoft.net/utils/time_zones_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/timezonesview.zip
 hash: 9f3b5abef89b03e291816a51efa96090f31a047e25a2751bd565598717207571
 pre_install: Test-Persistence $manifest.persist

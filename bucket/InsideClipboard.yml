@@ -1,7 +1,9 @@
 version: "1.15"
 description: Displays the content of all formats stored in the clipboard.
 homepage: https://www.nirsoft.net/utils/inside_clipboard.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/insideclipboard.zip
 hash: fe5052f6efc39f5f223b32006616841eb95c08eb8f85acff41f502ba883d7737
 pre_install: Test-Persistence $manifest.persist

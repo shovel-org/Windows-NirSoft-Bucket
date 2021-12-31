@@ -1,7 +1,9 @@
 version: "1.41"
 description: Captures .flv (Flash Video) files and RTSP/MMS video streams while the Web browser download and play them inside a Web page.
 homepage: https://www.nirsoft.net/utils/web_video_capture.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/webvideocap.zip
 hash: 394bf3835ce0ad7e0e880763ee3ec1332de59ddbe2c9d5317756f742cd2968ed
 pre_install: $manifest.persist | Where-Object { $_ -like '*.*' } | Test-Persistence

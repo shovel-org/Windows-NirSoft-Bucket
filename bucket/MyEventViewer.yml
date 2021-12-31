@@ -1,7 +1,9 @@
 version: "2.25"
 description: MyEventViewer is a simple alternative to the standard event viewer of Windows.
 homepage: https://www.nirsoft.net/utils/my_event_viewer.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/myeventviewer-x64.zip

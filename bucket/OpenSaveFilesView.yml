@@ -1,7 +1,9 @@
 version: "1.15"
 description: Displays list of files that you previously opened.
 homepage: https://www.nirsoft.net/utils/open_save_files_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/opensavefilesview-x64.zip

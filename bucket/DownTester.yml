@@ -1,7 +1,9 @@
 version: "1.30"
 description: Test your Internet download speed.
 homepage: https://www.nirsoft.net/utils/download_speed_tester.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/downtester.zip
 hash: 15d6a3ecea7ab676769042cfdb3cbbea197f81be63aec409e792dd2258642fe2
 pre_install: Test-Persistence $manifest.persist

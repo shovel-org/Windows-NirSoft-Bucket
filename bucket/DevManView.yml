@@ -1,7 +1,9 @@
 version: "1.75"
 description: Alternative to the standard Device Manager of Windows.
 homepage: https://www.nirsoft.net/utils/device_manager_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/devmanview-x64.zip

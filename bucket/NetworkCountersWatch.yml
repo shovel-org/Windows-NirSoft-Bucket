@@ -1,7 +1,9 @@
 version: "1.02"
 description: Displays system counters for every network interface on your system.
 homepage: https://www.nirsoft.net/utils/network_counters_watch.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/networkcounterswatch.zip
 hash: 3d79626252d6cca7ac3051400d0881543a8d22d72114d736e23b2d5027d333cf
 pre_install: Test-Persistence $manifest.persist

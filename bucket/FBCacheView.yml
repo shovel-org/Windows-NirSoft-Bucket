@@ -1,7 +1,9 @@
 version: "1.21"
 description: Shows Facebook images stored in the cache of your Web browser.
 homepage: https://www.nirsoft.net/utils/facebook_cache_viewer.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/fbcacheview.zip
 hash: 7faf2e72c50ece1e7e193b431788e2ae0b15624797dbfab88cc10f7bade7ff31
 pre_install: Test-Persistence $manifest.persist

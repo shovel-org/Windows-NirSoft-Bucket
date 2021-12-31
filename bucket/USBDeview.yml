@@ -1,7 +1,9 @@
 version: "3.02"
 description: Lists all installed USB devices that you previously used.
 homepage: https://www.nirsoft.net/utils/usb_devices_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/usbdeview-x64.zip

@@ -1,7 +1,9 @@
 version: "1.77"
 description: Grab the data stored in list-views, tree-views, list boxes, and combo boxes.
 homepage: https://www.nirsoft.net/utils/sysexp.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/sysexp-x64.zip

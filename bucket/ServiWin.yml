@@ -1,7 +1,9 @@
 version: "1.71"
 description: displays the list of installed drivers and services on your system.
 homepage: https://www.nirsoft.net/utils/serviwin.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/serviwin-x64.zip

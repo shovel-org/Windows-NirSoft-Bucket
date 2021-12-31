@@ -1,7 +1,9 @@
 version: "1.10"
 description: View user profiles information on your system.
 homepage: https://www.nirsoft.net/utils/user_profiles_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/userprofilesview.zip
 hash: 350bbfdd12ca9d8b7ecf59b92410424acf99197f0bd9d8b2451cd7026413e2a4
 pre_install: Test-Persistence $manifest.persist

@@ -1,7 +1,9 @@
 version: "1.05"
 description: Recovers the passwords stored by the VNC tool.
 homepage: https://www.nirsoft.net/utils/vnc_password.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/toolsdownload/vncpassview.zip
 hash: a598f49d5b6c06097550952aef7260f226227cf64a982c8fedb605f8f30039b4
 pre_install: Test-Persistence $manifest.persist

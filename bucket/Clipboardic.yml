@@ -1,7 +1,9 @@
 version: "1.15"
 description: Small and simple clipboard manager.
 homepage: https://www.nirsoft.net/utils/clipboardic.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/clipboardic.zip
 hash: 1a061abef1c8899cd199ae426ef35659e2ce219e0acddb427c74c52c517ef7dc
 pre_install: Test-Persistence $manifest.persist

@@ -1,7 +1,9 @@
 version: "1.11"
 description: Watch the Windows Sockets (WinSock) activity of the selected process.
 homepage: https://www.nirsoft.net/utils/socket_sniffer.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/socketsniff.zip
 hash: 2160d297c21a4758e540ea5291c6d4df4bce74c2dab85647a8a1a875fcf49ccc
 pre_install: Test-Persistence $manifest.persist

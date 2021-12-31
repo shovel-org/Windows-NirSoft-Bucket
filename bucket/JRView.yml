@@ -1,7 +1,9 @@
 version: "1.00"
 description: Displays the installed Java Runtime    Environments.
 homepage: https://www.nirsoft.net/utils/jrview.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/jrview.zip
 hash: ef9bbfbd17b7b9c7215b54b86597c5e345b44904d1ab7b55d1081796453619a1
 pre_install: Test-Persistence $manifest.persist

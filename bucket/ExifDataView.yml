@@ -1,7 +1,9 @@
 version: "1.11"
 description: Displays the Exif data stored inside .jpg image files
 homepage: https://www.nirsoft.net/utils/exif_data_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/exifdataview.zip
 hash: f244a806e8ef8e1a85df67dfa96e40bbf4cf9196905ebcf18d4a81c91aa69261
 pre_install: Test-Persistence $manifest.persist

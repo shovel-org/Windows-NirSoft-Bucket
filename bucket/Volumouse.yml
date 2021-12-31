@@ -1,7 +1,9 @@
 version: "2.03"
 description: Adjusts the volume of speakers with the wheel of mouse.
 homepage: https://www.nirsoft.net/utils/volumouse.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/volumouse-x64.zip

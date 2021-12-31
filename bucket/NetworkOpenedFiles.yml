@@ -1,7 +1,9 @@
 version: "1.45"
 description: Displays the files that are currently opened by other computers on your network.
 homepage: https://www.nirsoft.net/utils/network_opened_files.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/networkopenedfiles-x64.zip

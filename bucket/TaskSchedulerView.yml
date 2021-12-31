@@ -1,7 +1,9 @@
 version: "1.68"
 description: View/Disable/Enable tasks from the Task Scheduler of Windows.
 homepage: https://www.nirsoft.net/utils/task_scheduler_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/taskschedulerview-x64.zip

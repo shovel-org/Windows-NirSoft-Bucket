@@ -1,7 +1,9 @@
 version: "1.05"
 description: View the content of all memory blocks allocated in the heap.
 homepage: https://www.nirsoft.net/utils/heap_memory_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/heapmemview-x64.zip

@@ -1,7 +1,9 @@
 version: "1.02"
 description: Simple HTML designer/editor
 homepage: https://www.nirsoft.net/utils/html_doc_edit.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/htmldocedit.zip
 hash: eed77808621fa1331ba194b1593bc18ec7a1628601282ff0a5163b02ce945cde
 pre_install: Test-Persistence $manifest.persist

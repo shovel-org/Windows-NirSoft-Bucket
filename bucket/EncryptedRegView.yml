@@ -1,7 +1,9 @@
 version: "1.03"
 description: Scans the Registry and    decrypts the data encrypted with    DPAPI.
 homepage: https://www.nirsoft.net/utils/encrypted_registry_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/toolsdownload/encryptedregview-x64.zip

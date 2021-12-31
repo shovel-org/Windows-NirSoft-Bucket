@@ -1,7 +1,9 @@
 version: "1.00"
 description: Dumps all current detected wireless networks information into the standard output.
 homepage: https://www.nirsoft.net/utils/wireless_net_console.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/wirelessnetconsole.zip
 hash: 6b365808b7526bcfcee1cf870dd4d0602669695481ed70ed6edb2f4572abb78a
 pre_install: Test-Persistence $manifest.persist

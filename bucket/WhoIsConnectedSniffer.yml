@@ -1,7 +1,9 @@
 version: "1.27"
 description: Network discovery tool that listens to network packets on network adapter using a capture driver and accumulates a list of computer and devices currently connected to network.
 homepage: https://www.nirsoft.net/utils/who_is_connected_sniffer.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/whoisconnectedsniffer-x64.zip

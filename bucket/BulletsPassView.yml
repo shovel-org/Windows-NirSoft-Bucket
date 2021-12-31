@@ -1,7 +1,9 @@
 version: "1.32"
 description: Reveals the passwords stored behind the bullets.
 homepage: https://www.nirsoft.net/utils/bullets_password_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/bulletspassview-x64.zip

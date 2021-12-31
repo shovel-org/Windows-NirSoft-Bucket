@@ -1,7 +1,9 @@
 version: "1.90"
 description: Turns on one or more computers remotely by sending Wake-on-LAN (WOL) packet.
 homepage: https://www.nirsoft.net/utils/wake_on_lan.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/wakemeonlan-x64.zip

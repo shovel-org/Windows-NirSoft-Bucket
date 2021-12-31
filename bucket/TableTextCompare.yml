@@ -1,7 +1,9 @@
 version: "1.20"
 description: Compare tab-delimited or comma-delimited (csv) files.
 homepage: https://www.nirsoft.net/utils/csv_file_comparison.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/tabletextcompare.zip
 hash: 9450b1ebea00d1ec6e868e740e8c35fc7a8aff0cdd0ee05da7066e95f2ace88e
 pre_install: Test-Persistence $manifest.persist

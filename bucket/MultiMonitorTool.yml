@@ -1,7 +1,9 @@
 version: "1.96"
 description: Enable,disable,and set the primary monitor in Multi-Monitor system.
 homepage: https://www.nirsoft.net/utils/multi_monitor_tool.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/multimonitortool-x64.zip

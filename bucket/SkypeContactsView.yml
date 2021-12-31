@@ -1,7 +1,9 @@
 version: "1.05"
 description: Displays the list of Skype contacts stored in the local database file of Skype.
 homepage: https://www.nirsoft.net/utils/skype_contacts_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/skypecontactsview.zip
 hash: 03a920762ff09cf20b5328e2f6700089b0dfef1bf893d3a14c6868c041943120
 pre_install: Test-Persistence $manifest.persist

@@ -1,7 +1,9 @@
 version: "1.00"
 description: Displays the details of all Winsock service providers installed on system.
 homepage: https://www.nirsoft.net/utils/winsock_service_providers.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/winsockservicesview.zip
 hash: 135131357d35cd429bc9a06408b810082e1db3ec910f3314e3c5377142d219b9
 pre_install: Test-Persistence $manifest.persist

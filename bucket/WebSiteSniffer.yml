@@ -1,7 +1,9 @@
 version: "1.51"
 description: Packet sniffer tool that captures all Web site files downloaded by Web browser while browsing the Internet, and stores them.
 homepage: https://www.nirsoft.net/utils/web_site_sniffer.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/websitesniffer-x64.zip

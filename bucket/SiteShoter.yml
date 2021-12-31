@@ -1,7 +1,9 @@
 version: "1.42"
 description: Save a screenshot of any Web page into a file.
 homepage: https://www.nirsoft.net/utils/web_site_screenshot.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/siteshoter.zip
 hash: 72cc2633ebc81a5c6a79e7543c2da9b1e56e901c7d2c9e688d582a630838d2cc
 pre_install: Test-Persistence $manifest.persist

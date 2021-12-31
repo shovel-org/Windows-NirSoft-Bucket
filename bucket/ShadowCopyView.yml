@@ -1,7 +1,9 @@
 version: "1.15"
 description: View shadow copies on your system
 homepage: https://www.nirsoft.net/utils/shadow_copy_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/shadowcopyview-x64.zip

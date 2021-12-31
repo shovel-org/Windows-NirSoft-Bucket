@@ -1,7 +1,9 @@
 version: "1.00"
 description: Displays the details of all MMC snap-ins installed on your system.
 homepage: https://www.nirsoft.net/utils/mmc_snapins_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/mmcsnapinsview-x64.zip

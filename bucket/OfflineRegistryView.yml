@@ -1,7 +1,9 @@
 version: "1.03"
 description: View offline Registry files
 homepage: https://www.nirsoft.net/utils/offline_registry_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/offlineregistryview-x64.zip

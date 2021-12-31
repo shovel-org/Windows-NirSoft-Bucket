@@ -1,7 +1,9 @@
 version: "2.26"
 description: Display a general statistics of your Outlook emails.
 homepage: https://www.nirsoft.net/utils/outlook_statistics.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/outlookstatview-x64.zip

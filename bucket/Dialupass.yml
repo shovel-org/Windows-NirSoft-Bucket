@@ -1,7 +1,9 @@
 version: "3.61"
 description: Recovers Dial-Up passwords in all versions of Windows.
 homepage: https://www.nirsoft.net/utils/dialupass.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/toolsdownload/dialupass.zip
 hash: a79c79fa0ef5d6e95424ecc92af8c6c2719f4a8275fe7825dffb071bec2b1305
 pre_install: Test-Persistence $manifest.persist

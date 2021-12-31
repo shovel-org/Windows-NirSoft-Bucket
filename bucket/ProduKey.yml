@@ -1,7 +1,9 @@
 version: "1.97"
 description: Displays the CD-Keys of MS-Office/Windows installed on your computer.
 homepage: https://www.nirsoft.net/utils/product_cd_key_viewer.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/produkey-x64.zip

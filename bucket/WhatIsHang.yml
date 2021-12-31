@@ -1,7 +1,9 @@
 version: "1.27"
 description: Detect the software or process that is currently hung.
 homepage: https://www.nirsoft.net/utils/what_is_hang.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/whatishang-x64.zip

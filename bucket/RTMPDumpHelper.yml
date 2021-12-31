@@ -1,7 +1,9 @@
 version: "1.22"
 description: Download RTMP streams in conjunction with RTMPDump toolkit.
 homepage: https://www.nirsoft.net/utils/rtmp_dump_helper.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/rtmpdumphelper-x64.zip

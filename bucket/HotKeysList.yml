@@ -1,7 +1,9 @@
 version: "1.05"
 description: Displays the list of hot keys that are currently registered on your system.
 homepage: https://www.nirsoft.net/utils/hot_keys_list.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/hotkeyslist.zip
 hash: e20e2c76003f0869788c6e171d252b0a44663ecbe8bc0f321d6eab28a8b11402
 pre_install: Test-Persistence $manifest.persist

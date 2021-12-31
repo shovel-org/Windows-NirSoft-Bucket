@@ -1,7 +1,9 @@
 version: "1.01"
 description: History viewer for Safari Web browser
 homepage: https://www.nirsoft.net/utils/safari_history_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/safarihistoryview.zip
 hash: 6b467088a046c2428fad1a7a78395622f6e23798c87186220fee04fbec0f488c
 pre_install: Test-Persistence $manifest.persist

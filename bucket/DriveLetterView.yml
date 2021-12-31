@@ -1,7 +1,9 @@
 version: "1.50"
 description: View and change drive letter assignments.
 homepage: https://www.nirsoft.net/utils/drive_letter_view.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/driveletterview-x64.zip

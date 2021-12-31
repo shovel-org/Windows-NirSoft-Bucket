@@ -1,7 +1,9 @@
 version: "1.21"
 description: Installs applications from zip archives, that do not provide an installation module.
 homepage: https://www.nirsoft.net/utils/zipinst.html
-license: Freeware
+license:
+  identifier: Freeware
+  url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/zipinst.zip
 hash: 5f086a0dc689217026f06111327ae5a7d9baaa250322b84ff9dda2c74f3de788
 pre_install: Test-Persistence $manifest.persist
