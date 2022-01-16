@@ -1,11 +1,11 @@
-version: "1.26"
+version: "1.27"
 description: Displays images stored in the cache of your Web browsers.
 homepage: https://www.nirsoft.net/utils/image_cache_viewer.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/imagecacheviewer.zip
-hash: b8660228be4920760fc97a6300f4f56dca355e96f207068ee83f6fc2988299e7
+hash: fd1fd71df0f8de322e2f4daf858c437bc8c89cc46371a64d22bcf557d745937f
 pre_install: Test-Persistence $manifest.persist
 bin: ImageCacheViewer.exe
 shortcuts:
