@@ -1,4 +1,4 @@
-version: "1.40"
+version: "1.41"
 description: Displays the details of downloaded files of Chrome and Firefox Web browsers
 homepage: https://www.nirsoft.net/utils/web_browser_downloads_view.html
 license:
@@ -7,10 +7,10 @@ license:
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/browserdownloadsview-x64.zip
-    hash: 679d42bc3fae39d2a274ebade8c6a2441be332d18353a69ac13f09059981cba0
+    hash: 5bc50b473ae0dc6f6aabc4690538b9a0c03c9cb5a9aaf40b2371aa6740d331e5
   32bit:
     url: https://www.nirsoft.net/utils/browserdownloadsview.zip
-    hash: 4912ded883681ab27ebd3ff7c71212a5bf603e2290065d4f1f2f8abfccfff855
+    hash: 626adec0e54ee4302ecd77b11d5e00ffb676e93b0982f2726e66693cfe2de78e
 pre_install: Test-Persistence $manifest.persist
 bin: BrowserDownloadsView.exe
 shortcuts:
