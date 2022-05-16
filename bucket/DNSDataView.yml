@@ -1,11 +1,11 @@
-version: "1.61"
+version: "1.65"
 description: Retrieve the DNS records (MX, NS, A, SOA) of the specified domains.
 homepage: https://www.nirsoft.net/utils/dns_records_viewer.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/dnsdataview.zip
-hash: 2fb96617331150c62f9114e73fd3170b4088b0c5bba76bac51dabb4b952a8443
+hash: 4b6076a878fb064e63089ef1cdc25792d0bdb7d54d771441e7e0d2232c7a470e
 pre_install: Test-Persistence $manifest.persist
 bin: DNSDataView.exe
 shortcuts:
