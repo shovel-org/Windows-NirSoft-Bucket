@@ -1,11 +1,11 @@
-version: "1.45"
+version: "1.46"
 description: MAC address lookup tool
 homepage: https://www.nirsoft.net/utils/mac_address_lookup_find.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/macaddressview.zip
-hash: deed03c0c83df81f74c826460851aceabd710e585cf1afa47fa9b820e993e8b0
+hash: 6595835b754ed41299b8b2ecebe722880c1de9c9adbfd19ebbfdbdc505587de6
 pre_install: Test-Persistence $manifest.persist
 bin: MACAddressView.exe
 shortcuts:
