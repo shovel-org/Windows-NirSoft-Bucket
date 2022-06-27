@@ -1,4 +1,4 @@
-version: "3.17"
+version: "3.20"
 description: Alternative to the standard "Search For Files And Folders" module of Windows.
 homepage: https://www.nirsoft.net/utils/search_my_files.html
 license:
@@ -7,10 +7,10 @@ license:
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/searchmyfiles-x64.zip
-    hash: acebecb9079c79517b2c45678e7b14f212c40d37592a58bfd793ce26728100ec
+    hash: cd75a560ba59f0b3030c022e8919657e6eedd3f48c95dd0fc2acdfa51c33a326
   32bit:
     url: https://www.nirsoft.net/utils/searchmyfiles.zip
-    hash: 6dcb957e93ceaaa388da3da62d70cde9268746340e9d9943b63df245a1dc1d4f
+    hash: b60b59c1a8088bae4315e229b4cea7fe9606c175f31408a4803e80fe7179162b
 pre_install: Test-Persistence $manifest.persist
 bin: SearchMyFiles.exe
 shortcuts:
