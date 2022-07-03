@@ -1,4 +1,4 @@
-version: "2.30"
+version: "2.31"
 description: View/change sound levels & save/load sound level profiles on Windows Vista/7/8
 homepage: https://www.nirsoft.net/utils/sound_volume_view.html
 license:
@@ -7,10 +7,10 @@ license:
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/soundvolumeview-x64.zip
-    hash: 11bbb1948819e8f2c79421f7743f13870fcd724d28c96b60e5f5400c6f975035
+    hash: 4db156138ba3f474da294cf685c841fe70e6215c390b59ace8409beb13a00242
   32bit:
     url: https://www.nirsoft.net/utils/soundvolumeview.zip
-    hash: bc537095a91a9a78fe594fd39649672988959f09fb6d46df6f3dea1226d93ebd
+    hash: 52802310921229aeca400514d371b6ab99577cc42ca178ae69ede9506b1956ab
 pre_install: Test-Persistence $manifest.persist
 bin: SoundVolumeView.exe
 shortcuts:
