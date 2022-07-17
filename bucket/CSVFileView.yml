@@ -1,4 +1,4 @@
-version: "2.58"
+version: "2.60"
 description: CSV/Tab-delimited file viewer and converter
 homepage: https://www.nirsoft.net/utils/csv_file_view.html
 license:
@@ -7,10 +7,10 @@ license:
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/csvfileview-x64.zip
-    hash: 4da5e2549308ee5c4fc19b778faad3e962e0e02975c37fcaa8fc986752426614
+    hash: db7c9b0be73988af6003a958609094e57c255f45f8def8510b521dcb78b7642c
   32bit:
     url: https://www.nirsoft.net/utils/csvfileview.zip
-    hash: edab2ef1236787d82e1e911ebe219b7c6dabbb4792a06110edbc7b5de6ae93f5
+    hash: 886acd61e58a99021a915d2a2d39486dd7e903b44949c0264a87421ef07e7eae
 pre_install: Test-Persistence $manifest.persist
 bin: CSVFileView.exe
 shortcuts:
