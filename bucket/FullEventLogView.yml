@@ -1,4 +1,4 @@
-version: "1.71"
+version: "1.72"
 description: Event log viewer for Windows 10/8/7/Vista.
 homepage: https://www.nirsoft.net/utils/full_event_log_view.html
 license:
@@ -7,10 +7,10 @@ license:
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/fulleventlogview-x64.zip
-    hash: ec128bda81ea193b8dbac9ff120b3c8c7513f244c3a7a560b9033dbb2f60decc
+    hash: 9ab3d5bcc6f425080f31dd24da30ee880f95c28950eb1b1dde3b92137b7bf41d
   32bit:
     url: https://www.nirsoft.net/utils/fulleventlogview.zip
-    hash: e6059027d662939095f82ec3fb1f077fc9bd887ef569c15d95b268a2086f16aa
+    hash: babf1c2302c16555e4a63adc1f1b9b98ae876b7242b3bb4be3865c0536585a18
 pre_install: Test-Persistence $manifest.persist
 bin: FullEventLogView.exe
 shortcuts:
