@@ -1,4 +1,4 @@
-version: "1.46"
+version: "1.47"
 description: Shows installed programs on your system and allows you to uninstall them.
 homepage: https://www.nirsoft.net/utils/uninstall_view.html
 license:
