@@ -1,4 +1,4 @@
-version: "3.45"
+version: "3.46"
 description: Extract multiple attachments from Outlook.
 homepage: https://www.nirsoft.net/utils/outlook_attachment.html
 license:
@@ -7,10 +7,10 @@ license:
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/outlookattachview-x64.zip
-    hash: f927ec669d560be9d51fce16b33ebf7dbf6d197ca361b55c10ffd33ffcc783a8
+    hash: bd71e5afaab52a0c76e018b43009f3d4e21903c53e12eac1983cadbef1dab486
   32bit:
     url: https://www.nirsoft.net/utils/outlookattachview.zip
-    hash: 04de3d005a7f612ce1da20fc266959f26c3ca6151f9237c12e8c8a796c8afeef
+    hash: 81d4a25ecd63c8c04e29d70bea6709eb383860f49083c79e55a5cb587597d63d
 pre_install: Test-Persistence $manifest.persist
 bin: OutlookAttachView.exe
 shortcuts:
