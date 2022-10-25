@@ -1,4 +1,4 @@
-version: "1.22"
+version: "1.23"
 description: Displays extensive information about all windows currently opened on your system
 homepage: https://www.nirsoft.net/utils/gui_prop_view.html
 license:
@@ -7,10 +7,10 @@ license:
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/guipropview-x64.zip
-    hash: 27f7241eb82d7f968315bdf331dbc6ed17466b84007cdb9885024042c6786e31
+    hash: 144284adf9b8289c459ba5b47db86998765e8d39c1abf30aec2644ccdbad1b27
   32bit:
     url: https://www.nirsoft.net/utils/guipropview.zip
-    hash: fe0aa6e1031af5d73e739d7631680ec39c92258a14e8614cb74b6d83a9b39841
+    hash: c2fabed7db905a5614f6124bbc3868062c9226a158b207e5459703935b472122
 pre_install: Test-Persistence $manifest.persist
 bin: GUIPropView.exe
 shortcuts:
