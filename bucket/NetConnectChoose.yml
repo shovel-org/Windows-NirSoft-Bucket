@@ -1,11 +1,11 @@
-version: "1.07"
+version: "1.10"
 description: Set default Internet connection and view general connection information.
 homepage: https://www.nirsoft.net/utils/net_connect_choose.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/netconnectchoose.zip
-hash: ca779ca6d600963f135918fa49591645e1041d41b192051466dee774adfcdce1
+hash: a2c9735688b3d763508d5b5012309604ffd365d09f3f2a99e72bc4aff906b132
 pre_install: Test-Persistence $manifest.persist
 bin: NetConnectChoose.exe
 shortcuts:
