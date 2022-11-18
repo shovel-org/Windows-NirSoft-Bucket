@@ -1,11 +1,11 @@
-version: "1.32"
+version: "1.33"
 description: Fast Traceroute utility with IP country information.
 homepage: https://www.nirsoft.net/utils/country_traceroute.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/countrytraceroute.zip
-hash: df02f698aec6c332af9ee9b4b770ed6205853390588951a237af36218a2cd98c
+hash: b04d9d98834a814d79dfa39b1751da122b5c8d415fe57cdf499866c974541d5f
 pre_install: Test-Persistence $manifest.persist
 bin: CountryTraceRoute.exe
 shortcuts:
