@@ -1,11 +1,11 @@
-version: "1.16"
+version: "1.17"
 description: Displays general information and statistics about the active wifi connection.
 homepage: https://www.nirsoft.net/utils/wireless_connection_information.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/wirelessconnectioninfo.zip
-hash: f85da422e83aa127b28b99a137459f735dd8aa5ff0f039d43deeed078ff0b904
+hash: 5b5e56bdc529170a43706c8f304891ded0bc3e371fa37bcf3dc41de3d4bfd0a8
 pre_install: Test-Persistence $manifest.persist
 bin: WirelessConnectionInfo.exe
 shortcuts:
