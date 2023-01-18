@@ -1,11 +1,11 @@
-version: "1.60"
+version: "1.61"
 description: view country information about IP addresses.
 homepage: https://www.nirsoft.net/utils/ip_country_info_offline.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/ipinfooffline.zip
-hash: a99ef1491cea76e6d7d63e41ff27f9c54fd96ca77ec903895f4f7cc8883734c9
+hash: 6a66338dc4e41d715fc52bd940ea1ed40a36ebba284470a8994e0790083b72da
 pre_install: Test-Persistence $manifest.persist
 bin: IPInfoOffline.exe
 shortcuts:
