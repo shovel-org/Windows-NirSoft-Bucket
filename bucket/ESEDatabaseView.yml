@@ -1,11 +1,11 @@
-version: "1.71"
+version: "1.72"
 description: View the content of ESE database files (.edb files)
 homepage: https://www.nirsoft.net/utils/ese_database_view.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/esedatabaseview.zip
-hash: b2055f214025aae831dcfe8acbcf1f25373f72f3224a82001191badc15d8e51f
+hash: 4e061a65cb9c57abae3daf1c7dfca2b9e70f2b0c4b6d1cc3abdad8459aab20c6
 pre_install: Test-Persistence $manifest.persist
 bin: ESEDatabaseView.exe
 shortcuts:
