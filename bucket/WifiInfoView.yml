@@ -1,11 +1,11 @@
-version: "2.77"
+version: "2.78"
 description: Scans the wireless networks in area and displays extensive information about them.
 homepage: https://www.nirsoft.net/utils/wifi_information_view.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/wifiinfoview.zip
-hash: 58d2874b707861cfc8c64abe744dabea00a5e4e09c45140f16e81c4bfab229ca
+hash: 58b6812b76157f1f4b1e32ff41b0c92121a3aee6979dc07efa17c750c4b2d581
 pre_install: Test-Persistence $manifest.persist
 bin: WifiInfoView.exe
 shortcuts:
