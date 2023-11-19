@@ -1,4 +1,4 @@
-version: "2.22"
+version: "2.23"
 description: Recovers all wireless network security keys/passwords (WEP/WPA) stored in computer.
 homepage: https://www.nirsoft.net/utils/wireless_key.html
 license:
@@ -7,10 +7,10 @@ license:
 architecture:
   64bit:
     url: https://www.nirsoft.net/toolsdownload/wirelesskeyview-x64.zip#/cosi.cosi
-    hash: 75039e9d4c1ae6a8e0377d99ede10fc5d9a78d4b1b6328a2ec6c6b34a198f8b4
+    hash: df7a6ddeed7fd96f1006c09287327da9c2c55637bd2590dfca2982cdbdf64b4d
   32bit:
     url: https://www.nirsoft.net/toolsdownload/wirelesskeyview.zip#/cosi.cosi
-    hash: 07fdb90d607d64db82f1da44b768f3f8ac9cf4b615935c9e3bfb7fd630451079
+    hash: 8f2372e240abc227724290c102ca69d1866bab05e9d8ec420bdcf5e6e1fb4792
 pre_install: |
   Expand-7zipArchive "$dir\$fname" -Switches '-pWKey4567#'
   Test-Persistence $manifest.persist
