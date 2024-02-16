@@ -1,11 +1,11 @@
-version: "1.75"
+version: "1.76"
 description: Alternative to the standard internal cookies viewer of Google Chrome
 homepage: https://www.nirsoft.net/utils/chrome_cookies_view.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/chromecookiesview.zip
-hash: 30e1694c33c599984b46319c276e1bd5438f9898cdb6211e88a35c8129f6aa57
+hash: d8555fcd69243037decf6b7d7b0b0d8d083477946236ccae78f485311f53e811
 pre_install: Test-Persistence $manifest.persist
 bin: ChromeCookiesView.exe
 shortcuts:
