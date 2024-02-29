@@ -1,11 +1,11 @@
-version: "2.40"
+version: "2.41"
 description: Scan and displays the list of all computers and devices that are currently connected to wireless network
 homepage: https://www.nirsoft.net/utils/wireless_network_watcher.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/wnetwatcher.zip
-hash: a852f3ecfb6bf7acd7fc152176bcae27ef0d9b9833bf38a995db0ae25494d47a
+hash: 2165a3acdd2c3625eade071ec0b3c5a77772cffbb6e0d23bc563db06f70efb8a
 pre_install: Test-Persistence $manifest.persist
 bin: WNetWatcher.exe
 shortcuts:
