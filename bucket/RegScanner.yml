@@ -1,4 +1,4 @@
-version: "2.71"
+version: "2.75"
 description: Scan and find values in the Registry
 homepage: https://www.nirsoft.net/utils/regscanner.html
 license:
@@ -7,10 +7,10 @@ license:
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/regscanner-x64.zip
-    hash: 40d9f84b045c6ce33cb32ca0b6fbcf37bd3b303774160a5beae04333998a9229
+    hash: c3ab15e7a60d86ffb125d3099191eab3e635b48bc6746e62fbfb0debbbb55d54
   32bit:
     url: https://www.nirsoft.net/utils/regscanner.zip
-    hash: 4bb2b038e4b83a4fdedb463f2684acac556332af9bdd3d112ac09c7df800019b
+    hash: fe93d9534c634523c499c55590bf6bb4466624b975f3052606de38969e357b2d
 pre_install: Test-Persistence $manifest.persist
 bin: RegScanner.exe
 shortcuts:
