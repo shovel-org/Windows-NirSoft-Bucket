@@ -1,11 +1,11 @@
-version: "2.36"
+version: "2.37"
 description: Monitor folder/drive changes.
 homepage: https://www.nirsoft.net/utils/folder_changes_view.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/folderchangesview.zip
-hash: b9ddce06e7634340d0ad68ccf318f284edc9c46fbdfd759eade95a7fb82dae63
+hash: 1d15dbed619efa0ea1faaf523717dd79c076abf62055e5d4d08474c89dc9d305
 pre_install: Test-Persistence $manifest.persist
 bin: FolderChangesView.exe
 shortcuts:
