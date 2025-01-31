@@ -1,4 +1,4 @@
-version: "3.10"
+version: "3.11"
 description: Extracts Web site video files from the cache of Web browser
 homepage: https://www.nirsoft.net/utils/video_cache_view.html
 license:
@@ -7,10 +7,10 @@ license:
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/videocacheview-x64.zip
-    hash: 95f375584f9c80a385efaa88e10cea941b1081f05a49100bebee11a50e2c6bba
+    hash: 5441ee47081c0d91a2bdc4781b54e0d896fa093b443a065255e2c47f4c1ef446
   32bit:
     url: https://www.nirsoft.net/utils/videocacheview.zip
-    hash: 3de45dbd3b3e0cdd911ec75af808dc85bbc59fe21d66cf9e073a71a7e879a649
+    hash: c62bb5338b7dce2b84df62a0847b8922ddf3bc0384a2bbce483a86c04c49ccf7
 pre_install: Test-Persistence $manifest.persist
 bin: VideoCacheView.exe
 shortcuts:
