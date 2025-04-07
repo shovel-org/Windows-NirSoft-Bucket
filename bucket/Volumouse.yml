@@ -1,4 +1,4 @@
-version: "2.15"
+version: "2.20"
 description: Adjusts the volume of speakers with the wheel of mouse.
 homepage: https://www.nirsoft.net/utils/volumouse.html
 license:
@@ -7,10 +7,10 @@ license:
 architecture:
   64bit:
     url: https://www.nirsoft.net/utils/volumouse-x64.zip
-    hash: a1589b344273e387515c311d48c1f432f9b12818be98cd8f50f8d11b7ed79767
+    hash: b28aea3c7321936a9bc6cec09d445477dd0bfb3cf3b0c31c149210d40d266a98
   32bit:
     url: https://www.nirsoft.net/utils/volumouse.zip
-    hash: 026098453cb8f14898b3ddc0c7bb9e7855a05be930ad7f2261016829d8f0db89
+    hash: b64bd32b697d36f2435227fdf728ef844437cedaaea1ed016e82fc4ec03aa744
 pre_install: Test-Persistence $manifest.persist
 bin: volumouse.exe
 shortcuts:
