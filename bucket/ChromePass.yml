@@ -1,11 +1,11 @@
-version: "1.58"
+version: "1.60"
 description: Password recovery tool for Google Chrome Web browser.
 homepage: https://www.nirsoft.net/utils/chromepass.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/toolsdownload/chromepass.zip#/cosi.cosi
-hash: f7888584d6d41c5d8efe068e0f0e00aa8d7c93d3bd42c343ec0368ba893f0487
+hash: c5ba42cf6c11316d0ff36b6b75ff7760a8d40ad833894dbcb5dd702f1a0c8bdb
 pre_install: |
   Expand-7zipArchive "$dir\$fname" -Switches '-pchpass9126*' -Removal
   Test-Persistence $manifest.persist
