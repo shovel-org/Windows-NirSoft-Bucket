@@ -1,11 +1,11 @@
-version: "2.16"
+version: "2.17"
 description: Recovers lost passwords from Web browser.
 homepage: https://www.nirsoft.net/utils/web_browser_password.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/toolsdownload/webbrowserpassview.zip#/cosi.cosi
-hash: efc87df3d31afe41ae5c47ca06b87860eeaa36c6533b8c6731b98126c44d3094
+hash: aba230a6559d6fd61349005cf83a61bb2354a42a27eb1cb25222c7156a5f35f7
 pre_install: |
   Expand-7zipArchive "$dir\$fname" -Switches '-pwbpv28821@'
   Test-Persistence $manifest.persist
