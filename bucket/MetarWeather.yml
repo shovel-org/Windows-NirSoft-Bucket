@@ -1,11 +1,11 @@
-version: "1.78"
+version: "1.79"
 description: Decode METAR weather reports, and display them in a simple weather report table.
 homepage: https://www.nirsoft.net/utils/mweather.html
 license:
   identifier: Freeware
   url: https://www.nirsoft.net/about_nirsoft_freeware.html
 url: https://www.nirsoft.net/utils/mweather.zip
-hash: 00dfe305eb9e7a0b363e084891030f2639a9a857203028829f2943f4863db657
+hash: e4d2fe1b3ec9b5661ca6e5053e77e8ef9364ecba57aa7d9f39ee3e4325b799f2
 pre_install: Test-Persistence $manifest.persist
 bin: mweather.exe
 shortcuts:
